@@ -580,8 +580,8 @@ video {
   border-width: 0;
 }
 
-.visible {
-  visibility: visible;
+.collapse {
+  visibility: collapse;
 }
 
 .fixed {
@@ -753,6 +753,10 @@ video {
   margin-bottom: 0px;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-14 {
   margin-bottom: 3.5rem;
 }
@@ -795,10 +799,6 @@ video {
 
 .ml-10 {
   margin-left: 2.5rem;
-}
-
-.ml-14 {
-  margin-left: 3.5rem;
 }
 
 .ml-2 {
@@ -955,6 +955,10 @@ video {
 
 .h-2 {
   height: 0.5rem;
+}
+
+.h-3\/4 {
+  height: 75%;
 }
 
 .h-4 {
@@ -1151,8 +1155,8 @@ video {
   flex-grow: 1;
 }
 
-.table-fixed {
-  table-layout: fixed;
+.border-collapse {
+  border-collapse: collapse;
 }
 
 .-translate-x-1\/2 {
@@ -1453,6 +1457,11 @@ video {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .bg-gray-50 {
@@ -2087,11 +2096,6 @@ layer components {
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-slate-300:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -2204,18 +2208,13 @@ layer components {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.group:hover .group-hover\:fill-cyan-600 {
-  fill: #0891b2;
+.group:hover .group-hover\:fill-red-600 {
+  fill: #dc2626;
 }
 
 .group:hover .group-hover\:text-cyan-300 {
   --tw-text-opacity: 1;
   color: rgb(103 232 249 / var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:text-cyan-600 {
-  --tw-text-opacity: 1;
-  color: rgb(8 145 178 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:text-gray-700 {
@@ -2255,10 +2254,6 @@ layer components {
 }
 
 @media (min-width: 640px) {
-  .sm\:visible {
-    visibility: visible;
-  }
-
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -2374,11 +2369,6 @@ layer components {
     padding: 0px;
   }
 
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -2448,10 +2438,6 @@ layer components {
     margin-left: 0.5rem;
   }
 
-  .lg\:ml-28 {
-    margin-left: 7rem;
-  }
-
   .lg\:ml-32 {
     margin-left: 8rem;
   }
@@ -2460,16 +2446,16 @@ layer components {
     margin-left: 15rem;
   }
 
+  .lg\:ml-\[10rem\] {
+    margin-left: 10rem;
+  }
+
   .lg\:mr-2 {
     margin-right: 0.5rem;
   }
 
   .lg\:mt-36 {
     margin-top: 9rem;
-  }
-
-  .lg\:hidden {
-    display: none;
   }
 
   .lg\:h-28 {

@@ -54,8 +54,9 @@
 
   
     <header class="fixed w-2/3 shadow-black-400 top-0 z-10  mt-6  bg-white bg-opacity-80 p-4 shadow-2xl border-2 border-red-300">
+      <a href="index.html">
       <img src="images/SH-LOGO.png" class="w-12 absolute" alt="">
-      
+    </a>
       <nav >
         <!-- component -->
 <!-- This is an example component -->
@@ -75,7 +76,7 @@
       <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
       <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
           <li>
-          <a href="#" class="bg-red-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-red-700 md:p-0 rounded focus:outline-none" aria-current="page">Home</a>
+          <a href="index.html" class="bg-red-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-red-700 md:p-0 rounded focus:outline-none" aria-current="page">Home</a>
           </li>
           <li>
               <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-red-700 md:p-0 font-medium flex items-center justify-between w-full md:w-auto">Products<svg class="w-4 h-4 ml-1  " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
@@ -98,13 +99,13 @@
               </div>
           </li>
           <li>
-          <a href="#" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-red-700 md:p-0">Abous us</a>
+          <a href="#abousys" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-red-700 md:p-0">About us</a>
           </li>
           <!-- <li>
           <a href="#" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">Contact</a>
           </li> -->
           <li>
-          <a href="#" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">Contact</a>
+          <a href="#contactus" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-red-700 md:p-0">Contact</a>
           </li>
       </ul>
       </div>
@@ -138,12 +139,14 @@
   </div> 
         <!-- Allez Hssaine -->
 
-    </header>
+
     <div class="grid lg:grid-cols-2 grid-cols-1  lg:gap-14 gap-7">
          <div class="order-1 lg:order-none lg:ml-32 lg:mt-36  mx-10 ">
             <h1 class="text-5xl font-bold text-red-700 ">Welcome to <br>SH-Scooters </h1>
             <p class="text-gray-500 font-thin py-7 ">The First Morrocan Online Shop <br>Where You can find anything related <br> to electric Scooters</p>
-            <button class="  rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">Start Shopping </button>
+            <a href="#Startshopping">
+            <button  class="rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">Start Shopping </button>
+          </a>
           </div>
           <div class="swiper-container lg:rounded-bl-3xl ">                          
             <div class="swiper sample-slider lg:rounded-bl-3xl">
@@ -165,8 +168,8 @@
         <h1 class="text-center lg:text-2xl font-semibold text-black">Discover Our Technologies</h1>
         <div class="h-lil lg:mx-6 mt-4 rounded-full bg-red-500"></div>
       </div>
-      <div class="flex flex-wrap grow place-content-center gap-1">
-<a href="#" >    
+      <div id="Startshopping" class=" flex flex-wrap grow place-content-center gap-1  ">
+   
 <div  class="group relative transition duration-500 hover:scale-110  m-10  w-96 overflow-hidden rounded-lg shadow-2xl  ">
   <div class="relative overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init data-te-ripple-color="light">
     <img class=" w-full" src="images/1111.png" alt="" />
@@ -178,10 +181,11 @@
 
     <h5 class=":text-neutral-50 mb-2 relative  bottom-20 text-2xl font-bold leading-tight text-red-600 text-center">High Speed</h5>
     <p class=":text-neutral-200 mb-4 text-base relative bottom-10 text-neutral-600">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <button type="button" class="w-full hover:bg-primary-600 focus:bg-primary-600 active:bg-primary-700 :shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] :hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]" data-te-ripple-init data-te-ripple-color="light">BUY</button>
+    <a href="scooters.html">
+    <button type="button" class="w-full hover:bg-primary-600 focus:bg-primary-600 active:bg-primary-700 :shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] :hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]" data-te-ripple-init data-te-ripple-color="light">BUY</button></a>
   </div>
 </div>
-</a>  
+ 
 <div class="group relative m-10 transform transition duration-500 hover:scale-110   w-96 overflow-hidden rounded-lg shadow-2xl">
   <div class="relative overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init data-te-ripple-color="light">
     <img class=" w-full" src="images/2222.png" alt="" />
@@ -190,10 +194,10 @@
     </a>
   </div>  
   <div class="p-6">
-
+<a href="scooters.html">
     <h5 class=":text-neutral-50 mb-2 relative  bottom-20 text-2xl font-bold leading-tight text-red-600 text-center">Foldable</h5>
     <p class=":text-neutral-200 mb-4 text-base relative bottom-10 text-neutral-600">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <button type="button" class="w-full rounded-full hover:bg-primary-600 focus:bg-primary-600 active:bg-primary-700 :shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] :hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]  bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]" data-te-ripple-init data-te-ripple-color="light">BUY</button>
+    <button  type="button" class="w-full rounded-full hover:bg-primary-600 focus:bg-primary-600 active:bg-primary-700 :shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] :hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]  bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]" data-te-ripple-init data-te-ripple-color="light">BUY</button></a>
   </div>
 </div>
 <div class="group relative m-10  w-96 transition duration-500 hover:scale-110 overflow-hidden rounded-lg shadow-2xl">
@@ -207,13 +211,14 @@
 
     <h5 class=":text-neutral-50 mb-2 relative  bottom-20 text-2xl font-bold leading-tight text-red-600 text-center">Accessories</h5>
     <p class=":text-neutral-200 mb-4 text-base relative bottom-10 text-neutral-600">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <button type="button" class="w-full hover:bg-primary-600 focus:bg-primary-600 active:bg-primary-700 :shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] :hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]" data-te-ripple-init data-te-ripple-color="light">BUY</button>
+    <a href="acce.html">
+    <button  type="button" class="w-full hover:bg-primary-600 focus:bg-primary-600 active:bg-primary-700 :shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] :hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]" data-te-ripple-init data-te-ripple-color="light">BUY</button></a>
   </div>
 </div>
 </div>
-<div class="relative">
+<div class=" relative" id="abousys">
 <img src="images/w9.png" class="image2 mt-32  "   alt="">
-<h1 class="absolute text-white text-4xl lg:text-5xl font-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">Among Us</h1>
+<h1 class=" absolute text-white text-4xl lg:text-5xl font-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">Among Us</h1>
 </div>
 <div>
   
@@ -239,7 +244,7 @@
     </div>
   -->
  
-    <section class=>
+    <section id="contactus">
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-600">Contact Us</h2>
           <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">  </p>
@@ -325,13 +330,14 @@
             </div>
             <div>
               <h1 class="text-2xl font-bold  text-gray-900 uppercase ">Find Us</h1>
-                <p class="mt-10">wakha daba ndir map</p>
+              <div class="">
+              <iframe class="w-3/4 h-3/4 rounded-lg shadow-sm shadow-black" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2503.6311278532676!2d-5.573054456274791!3d33.8575201845286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda05aaf634bac87%3A0x64bfe117d2e27d7d!2sNational%20Graduate%20School%20of%20Arts%20and%20Crafts!5e1!3m2!1sen!2sma!4v1692226531498!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
             </div>
         </div>
     </div>
     <hr class="my-6 border-red-700 sm:mx-autolg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">IAWAT™</a>. All Rights Reserved.
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="http://schoolapp.ensam-umi.ac.ma/schoolapp/login" class="hover:underline">IAWAT™</a>. All Rights Reserved.
         </span>
         
     </div>
@@ -353,5 +359,25 @@
       },
   })
 </script>
+
+<!-- Include jQuery library (add this in the <head> section) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Your other scripts and stylesheets -->
+  
+  <script>
+  $(document).ready(function() {
+      $('a[href^="#"]').on('click', function(event) {
+          event.preventDefault();
+          var target = $(this.getAttribute('href'));
+          if (target.length) {
+              $('html, body').stop().animate({
+                  scrollTop: target.offset().top
+              }, 1000); // Adjust the scroll speed (in milliseconds) as needed
+          }
+      });
+  });
+  </script>
+  
 
 </html>

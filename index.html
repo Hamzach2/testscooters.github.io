@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="css/me.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <title>Document</title>
 </head>
@@ -50,10 +51,10 @@
   }
 </style>
 
-  <div class="flex justify-center">
+  <div class=" flex justify-center">
 
   
-    <header class="fixed w-2/3 shadow-black-400 top-0 z-10  mt-6  bg-white bg-opacity-80 p-4 shadow-2xl border-2 border-red-300">
+    <header class="fixed  w-2/3 shadow-black-400 top-0 z-10  mt-6  bg-white bg-opacity-80 p-4 shadow-2xl border-2 border-red-300">
       <a href="index.html">
       <img src="images/SH-LOGO.png" class="w-12 absolute" alt="">
     </a>
@@ -158,8 +159,8 @@
 
     <div class="grid lg:grid-cols-2 grid-cols-1  lg:gap-14 gap-7">
          <div class="order-1 lg:order-none lg:ml-32 lg:mt-36  mx-10 ">
-            <h1 class="text-5xl font-bold     text-red-700 ">WELCOME TO <br>SH-SCOOTERS </h1>
-            <p class="text-gray-500 josefin-sans font-thin py-7 ">The First Morrocan Online Shop <br>Where You can find anything related <br> to electric Scooters</p>
+            <h1 class="text-5xl font-bold fade-in-element    text-red-700 ">WELCOME TO<br>SH-SCOOTERS</h1>
+            <p class="text-gray-500 fade-in-element josefin-sans font-thin py-7 ">The First Morrocan Online Shop <br>Where You can find anything related <br> to electric Scooters</p>
             <a href="#Startshopping">
             <button  class="rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">Start Shopping </button>
           </a>
@@ -185,8 +186,33 @@
         <div class="h-lil lg:mx-6 mt-4 rounded-full bg-red-500"></div>
       </div>
       <div id="Startshopping" class=" flex flex-wrap grow place-content-center gap-1  ">
-   
-<div  class="group relative transition duration-500 hover:scale-110  m-10  w-96 overflow-hidden rounded-lg shadow-2xl  ">
+   <style>
+    .fade-in-element {
+      
+    opacity: 0; /* Initially set the opacity to 0 */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the animation */
+}
+
+.fade-in-element {
+    opacity: 0; /* Initially set the opacity to 0 */
+    position: relative; /* Enable positioning for animation */
+    left: -20px; /* Start off the screen to the left */
+    animation: fadeInLeft 0.5s ease-in-out forwards; /* Apply the animation */
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0; /* Start with fully transparent */
+        left: -20px; /* Start off the screen to the left */
+    }
+    to {
+        opacity: 1; /* End with fully opaque */
+        left: 0; /* Move to the normal position */
+    }
+}
+
+   </style>
+<div  class="fade-in-element group relative transition duration-500 hover:scale-110  m-10  w-96 overflow-hidden rounded-lg shadow-2xl  ">
   <div class="relative overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init data-te-ripple-color="light">
     <img class=" w-full" src="images/1111.png" alt="" />
     <a href="#!">
@@ -202,7 +228,7 @@
   </div>
 </div>
  
-<div class="group relative m-10 transform transition duration-500 hover:scale-110   w-96 overflow-hidden rounded-lg shadow-2xl">
+<div class="fade-in-element group relative m-10 transform transition duration-500 hover:scale-110   w-96 overflow-hidden rounded-lg shadow-2xl">
   <div class="relative overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init data-te-ripple-color="light">
     <img class=" w-full" src="images/2222.png" alt="" />
     <a href="#!">
@@ -216,7 +242,7 @@
     <button  type="button" class="w-full rounded hover:bg-primary-600 focus:bg-primary-600 active:bg-primary-700 :shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] :hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]  bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]" data-te-ripple-init data-te-ripple-color="light">BUY</button></a>
   </div>
 </div>
-<div class="group relative m-10  w-96 transition duration-500 hover:scale-110 overflow-hidden rounded-lg shadow-2xl">
+<div class="fade-in-element group relative m-10  w-96 transition duration-500 hover:scale-110 overflow-hidden rounded-lg shadow-2xl">
   <div class="relative overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init data-te-ripple-color="light">
     <img class=" w-full" src="images/3333.png" alt="" />
     <a href="#!">
@@ -359,6 +385,29 @@
     </div>
   </div>
 </footer>
+<a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+  <i class="fa fa-whatsapp my-float"></i>
+  </a>
+  <style>
+    .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+  </style>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

@@ -908,6 +908,10 @@ video {
   margin-top: 19.5rem;
 }
 
+.ml-\[-0\.5rem\] {
+  margin-left: -0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1665,62 +1669,6 @@ video {
   font-family: Rajdhani;
 }
 
-.font-\[\] {
-  font-family: ;
-}
-
-.font-\[Josefin\] {
-  font-family: Josefin;
-}
-
-.font-\[Josefin\+Sans\] {
-  font-family: Josefin+Sans;
-}
-
-.font-\[JosefinSans\] {
-  font-family: JosefinSans;
-}
-
-.font-\[Josefin-Sans\] {
-  font-family: Josefin-Sans;
-}
-
-.font-\[josefin-sans\] {
-  font-family: josefin-sans;
-}
-
-.font-\[josefin\] {
-  font-family: josefin;
-}
-
-.font-\[josefin-\] {
-  font-family: josefin-;
-}
-
-.font-\[font-\\\[Josefin-Sans\\\]\] {
-  font-family: font-\[Josefin-Sans\];
-}
-
-.font-\[rajdani\] {
-  font-family: rajdani;
-}
-
-.font-\[Oswald\] {
-  font-family: Oswald;
-}
-
-.font-\[Josefin-sans\] {
-  font-family: Josefin-sans;
-}
-
-.font-\[osefin\] {
-  font-family: osefin;
-}
-
-.font-\[josefin-sans-thin\] {
-  font-family: josefin-sans-thin;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1926,11 +1874,6 @@ video {
 .text-yellow-300 {
   --tw-text-opacity: 1;
   color: rgb(253 224 71 / var(--tw-text-opacity));
-}
-
-.text-red-900 {
-  --tw-text-opacity: 1;
-  color: rgb(127 29 29 / var(--tw-text-opacity));
 }
 
 .line-through {

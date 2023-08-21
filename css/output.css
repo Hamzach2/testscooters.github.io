@@ -804,6 +804,10 @@ video {
   margin-left: 8rem;
 }
 
+.ml-\[-0\.5rem\] {
+  margin-left: -0.5rem;
+}
+
 .ml-\[-36px\] {
   margin-left: -36px;
 }
@@ -906,10 +910,6 @@ video {
 
 .mt-\[19\.5rem\] {
   margin-top: 19.5rem;
-}
-
-.ml-\[-0\.5rem\] {
-  margin-left: -0.5rem;
 }
 
 .block {

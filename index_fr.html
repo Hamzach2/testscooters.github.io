@@ -1,0 +1,668 @@
+<html lang="fr" class="translated-ltr" style="height: 100%;"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/me.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+
+    <title>Document</title>
+ </head>
+<body class="bg-[#eaeaea]">
+  <style>
+    .image1{
+      height: 400px;    
+      object-fit: cover;
+    }
+    .swiper-container{
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        height: 400px;
+      
+        
+    }
+    @media (min-width:1220px) {
+      .swiper-container{
+        clip-path: polygon(100% 0 , 100% 100% , 0 100% , 15% 0 );
+      }
+      
+    }
+    .swiper-container {
+        left: 0px;
+    }
+    .swiper-container {
+      top: 0;
+      right: 0;
+    }
+    .sample-slider img{
+        width: 100%;
+    }
+  .swiper-button-next {
+    color: white;
+    top: 90%;
+    right: 40%;
+  }
+  .swiper-button-prev{
+    color: white;
+    top: 90%;
+    left: 40%;
+  }
+
+    @media (max-width: 640px) {
+    .l3iba {
+        display: none;
+    }
+}
+@media (min-width: 640px) {
+    .l3iba2 {
+        display: none;
+    }
+   
+}
+</style>
+
+
+  <div class=" flex justify-center">
+
+  
+    <header class="fixed  w-2/3 shadow-black-400 top-0 z-10  mt-6  bg-white bg-opacity-80 p-4 shadow-2xl border-2 border-red-300">
+      <a href="index.html">
+      <img src="images/SH-LOGO.png" class="w-12 absolute" alt="">
+      
+    </a>
+   
+      <nav>
+        <div class="">
+  <button id="states-button" data-dropdown-toggle="dropdown-states" class="flex-shrink-0 z-10 inline-flex items-center mb-[-51px] mt-0 ml-[7.5rem] text-sm font-medium text-center text-gray-500border rounded-l-lg  focus:ring-4 focus:outline-none focus:ring-gray-100" type="button">
+     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-3" viewBox="0 0 3 2"><path fill="#EC1920" d="M0 0h3v2H0z"/><path fill="#fff" d="M0 0h2v2H0z"/><path fill="#051440" d="M0 0h1v2H0z"/></svg>  
+      Français<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+</svg>
+  </button>
+  <div id="dropdown-states" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="states-button">
+          <li>
+              <a href="index.html"  class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-red-600  hover:text-white ">
+                  <div class="inline-flex items-center">
+                    <svg aria-hidden="true" class="h-3 mr-2" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" width="14" height="12" rx="2" fill="white"/><mask id="mask0_12694_49953" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="12"><rect x="0.5" width="14" height="12" rx="2" fill="white"/></mask><g mask="url(#mask0_12694_49953)"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 0H0.5V0.8H14.5V0ZM14.5 1.6H0.5V2.4H14.5V1.6ZM0.5 3.2H14.5V4H0.5V3.2ZM14.5 4.8H0.5V5.6H14.5V4.8ZM0.5 6.4H14.5V7.2H0.5V6.4ZM14.5 8H0.5V8.8H14.5V8ZM0.5 9.6H14.5V10.4H0.5V9.6ZM14.5 11.2H0.5V12H14.5V11.2Z" fill="#D02F44"/><rect x="0.5" width="6" height="5.6" fill="#46467F"/><g filter="url(#filter0_d_12694_49953)"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.83317 1.20005C1.83317 1.42096 1.68393 1.60005 1.49984 1.60005C1.31574 1.60005 1.1665 1.42096 1.1665 1.20005C1.1665 0.979135 1.31574 0.800049 1.49984 0.800049C1.68393 0.800049 1.83317 0.979135 1.83317 1.20005ZM3.1665 1.20005C3.1665 1.42096 3.01727 1.60005 2.83317 1.60005C2.64908 1.60005 2.49984 1.42096 2.49984 1.20005C2.49984 0.979135 2.64908 0.800049 2.83317 0.800049C3.01727 0.800049 3.1665 0.979135 3.1665 1.20005ZM4.1665 1.60005C4.3506 1.60005 4.49984 1.42096 4.49984 1.20005C4.49984 0.979135 4.3506 0.800049 4.1665 0.800049C3.98241 0.800049 3.83317 0.979135 3.83317 1.20005C3.83317 1.42096 3.98241 1.60005 4.1665 1.60005ZM5.83317 1.20005C5.83317 1.42096 5.68393 1.60005 5.49984 1.60005C5.31574 1.60005 5.1665 1.42096 5.1665 1.20005C5.1665 0.979135 5.31574 0.800049 5.49984 0.800049C5.68393 0.800049 5.83317 0.979135 5.83317 1.20005ZM2.1665 2.40005C2.3506 2.40005 2.49984 2.22096 2.49984 2.00005C2.49984 1.77913 2.3506 1.60005 2.1665 1.60005C1.98241 1.60005 1.83317 1.77913 1.83317 2.00005C1.83317 2.22096 1.98241 2.40005 2.1665 2.40005ZM3.83317 2.00005C3.83317 2.22096 3.68393 2.40005 3.49984 2.40005C3.31574 2.40005 3.1665 2.22096 3.1665 2.00005C3.1665 1.77913 3.31574 1.60005 3.49984 1.60005C3.68393 1.60005 3.83317 1.77913 3.83317 2.00005ZM4.83317 2.40005C5.01726 2.40005 5.1665 2.22096 5.1665 2.00005C5.1665 1.77913 5.01726 1.60005 4.83317 1.60005C4.64908 1.60005 4.49984 1.77913 4.49984 2.00005C4.49984 2.22096 4.64908 2.40005 4.83317 2.40005ZM5.83317 2.80005C5.83317 3.02096 5.68393 3.20005 5.49984 3.20005C5.31574 3.20005 5.1665 3.02096 5.1665 2.80005C5.1665 2.57914 5.31574 2.40005 5.49984 2.40005C5.68393 2.40005 5.83317 2.57914 5.83317 2.80005ZM4.1665 3.20005C4.3506 3.20005 4.49984 3.02096 4.49984 2.80005C4.49984 2.57914 4.3506 2.40005 4.1665 2.40005C3.98241 2.40005 3.83317 2.57914 3.83317 2.80005C3.83317 3.02096 3.98241 3.20005 4.1665 3.20005ZM3.1665 2.80005C3.1665 3.02096 3.01727 3.20005 2.83317 3.20005C2.64908 3.20005 2.49984 3.02096 2.49984 2.80005C2.49984 2.57914 2.64908 2.40005 2.83317 2.40005C3.01727 2.40005 3.1665 2.57914 3.1665 2.80005ZM1.49984 3.20005C1.68393 3.20005 1.83317 3.02096 1.83317 2.80005C1.83317 2.57914 1.68393 2.40005 1.49984 2.40005C1.31574 2.40005 1.1665 2.57914 1.1665 2.80005C1.1665 3.02096 1.31574 3.20005 1.49984 3.20005ZM2.49984 3.60005C2.49984 3.82096 2.3506 4.00005 2.1665 4.00005C1.98241 4.00005 1.83317 3.82096 1.83317 3.60005C1.83317 3.37913 1.98241 3.20005 2.1665 3.20005C2.3506 3.20005 2.49984 3.37913 2.49984 3.60005ZM3.49984 4.00005C3.68393 4.00005 3.83317 3.82096 3.83317 3.60005C3.83317 3.37913 3.68393 3.20005 3.49984 3.20005C3.31574 3.20005 3.1665 3.37913 3.1665 3.60005C3.1665 3.82096 3.31574 4.00005 3.49984 4.00005ZM5.1665 3.60005C5.1665 3.82096 5.01726 4.00005 4.83317 4.00005C4.64908 4.00005 4.49984 3.82096 4.49984 3.60005C4.49984 3.37913 4.64908 3.20005 4.83317 3.20005C5.01726 3.20005 5.1665 3.37913 5.1665 3.60005ZM5.49984 4.80005C5.68393 4.80005 5.83317 4.62096 5.83317 4.40005C5.83317 4.17913 5.68393 4.00005 5.49984 4.00005C5.31574 4.00005 5.1665 4.17913 5.1665 4.40005C5.1665 4.62096 5.31574 4.80005 5.49984 4.80005ZM4.49984 4.40005C4.49984 4.62096 4.3506 4.80005 4.1665 4.80005C3.98241 4.80005 3.83317 4.62096 3.83317 4.40005C3.83317 4.17913 3.98241 4.00005 4.1665 4.00005C4.3506 4.00005 4.49984 4.17913 4.49984 4.40005ZM2.83317 4.80005C3.01727 4.80005 3.1665 4.62096 3.1665 4.40005C3.1665 4.17913 3.01727 4.00005 2.83317 4.00005C2.64908 4.00005 2.49984 4.17913 2.49984 4.40005C2.49984 4.62096 2.64908 4.80005 2.83317 4.80005ZM1.83317 4.40005C1.83317 4.62096 1.68393 4.80005 1.49984 4.80005C1.31574 4.80005 1.1665 4.62096 1.1665 4.40005C1.1665 4.17913 1.31574 4.00005 1.49984 4.00005C1.68393 4.00005 1.83317 4.17913 1.83317 4.40005Z" fill="url(#paint0_linear_12694_49953)"/></g></g><defs><filter id="filter0_d_12694_49953" x="1.1665" y="0.800049" width="4.6665" height="5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="1"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_12694_49953"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_12694_49953" result="shape"/></filter><linearGradient id="paint0_linear_12694_49953" x1="1.1665" y1="0.800049" x2="1.1665" y2="4.80005" gradientUnits="userSpaceOnUse"><stop stop-color="white"/><stop offset="1" stop-color="#F0F0F0"/></linearGradient></defs></svg>         
+                      English
+                  </div>
+              
+                </a>
+          </li>
+          
+</div>
+</div>
+        <!-- component -->
+<!-- This is an example component -->
+<div class="max-w-2xl mx-auto">
+    
+  <nav class="border-gray-200">
+  <div class="container mx-auto flex flex-wrap items-center lg:justify-center justify-between">
+    <!-- <form action="" class="relative l3iba2  mt-[-11px] ml-1.5">
+      <input type="search" 
+            class=" peer cursor-pointer relative  z-10 mb-[-30px] w-12 border-gray-400 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-red-500 focus:pl-16 focus:pr-4" />
+      <svg xmlns="http://www.w3.org/2000/svg" class="absolute inset-y-[-5px]  h-8 w-11 border-r border-transparent stroke-red-500 px-3.5  peer-focus:stroke-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+    </form> -->
+      <a href="#" class="flex">
+      <!-- <svg class="h-10 mr-3" width="51" height="70" viewBox="0 0 51 70" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M1 53H27.9022C40.6587 53 51 42.7025 51 30H24.0978C11.3412 30 1 40.2975 1 53Z" fill="#76A9FA"></path><path d="M-0.876544 32.1644L-0.876544 66.411C11.9849 66.411 22.4111 55.9847 22.4111 43.1233L22.4111 8.87674C10.1196 8.98051 0.518714 19.5571 -0.876544 32.1644Z" fill="#A4CAFE"></path><path d="M50 5H23.0978C10.3413 5 0 15.2975 0 28H26.9022C39.6588 28 50 17.7025 50 5Z" fill="#1C64F2"></path></g><defs><clipPath id="clip0"><rect width="51" height="70" fill="white"></rect></clipPath></defs></svg> -->
+          <!-- <span class="self-center text-lg font-semibold whitespace-nowrap">FlowBite</span> -->
+      </a>
+      <button data-collapse-toggle="mobile-menu" type="button" class="md:hidden ml-3 text-gray-400 rounded-lg inline-flex items-center justify-center" aria-controls="mobile-menu-2" aria-expanded="false">
+      <span class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ouvrir le menu principal</font></font></span>
+      <svg class="w-6 h-6" fill="#00000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </button>
+      <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
+      <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
+          <li>
+          <a href="index.html" id="home" class="bg-red-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-red-700 md:p-0 rounded focus:outline-none" aria-current="page"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acceuil</font></font></a>
+          </li>
+          <li>
+            <div class="group inline-block">
+              <button id="products" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-red-700 md:p-0 font-medium flex items-center justify-between w-full md:w-auto flex-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Produits
+               
+                </font></font><span>
+                  <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180
+                    transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path>
+                  </svg>
+                </span>
+              </button>
+              <ul class="bg-white transform scale-0 group-hover:scale-100 absolute 
+              transition duration-50 ease-in-out origin-top rounded shadow  py-4  w-44"> <a href="scooters.html">
+                <li class="rounded-sm px-3 py-1 text-gray-700 hover:bg-gray-100" id="scooters"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Trottinettes</font></font></li></a>
+               
+                <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100">
+                  <button class="w-full text-left flex items-center outline-none focus:outline-none">
+                    <span class="pr-1 text-gray-700 flex-1" id="accessories"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Accessoires</font></font></span>
+                    <span class="mr-auto">
+                      <svg class="fill-current h-4 w-4
+                        transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path>
+                      </svg>
+                    </span>
+                  </button>
+                  <ul class="bg-white border rounded-sm absolute top-0 right-0 
+              transition duration-150 ease-in-out origin-top-left
+              min-w-32
+              ">
+                  <a href="acce.html">
+                    <li class="px-3 py-1 text-gray-700 hover:bg-gray-100" id="accessories1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xiaomi</font></font></li></a>
+                    <!-- <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100"> -->
+                      <!-- <button
+                        class="w-full text-left flex items-center outline-none focus:outline-none"
+                      >
+                        <span class="pr-1 flex-1">Python</span>
+                        <span class="mr-auto">
+                          <svg
+                            class="fill-current h-4 w-4
+                            transition duration-150 ease-in-out"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <ul
+                        class="bg-white border rounded-sm absolute top-0 right-0 
+                  transition duration-150 ease-in-out origin-top-left
+                  min-w-32
+                  "
+                      >
+                        <li class="px-3 py-1 hover:bg-gray-100">2.7</li>
+                        <li class="px-3 py-1 hover:bg-gray-100">3+</li>
+                      </ul>
+                    </li>
+                    <li class="px-3 py-1 hover:bg-gray-100">Go</li>
+                    <li class="px-3 py-1 hover:bg-gray-100">Rust</li>
+                  </ul>
+                </li> -->
+                <li class="rounded-sm px-3 py-1 text-gray-700 hover:bg-gray-100" id="accessories2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Essai</font></font></li>
+                <li class="rounded-sm px-3 py-1 text-gray-700 hover:bg-gray-100" id="accessories3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Essai</font></font></li>
+              </ul>   
+            </li></ul></div>
+            
+            <style>
+              /* since nested groupes are not supported we have to use 
+                 regular css for the nested dropdowns 
+              */
+              li>ul                 { transform: translatex(100%) scale(0) }
+              li:hover>ul           { transform: translatex(101%) scale(1) }
+              li > button svg       { transform: rotate(-90deg) }
+              li:hover > button svg { transform: rotate(-270deg) }
+            
+              /* Below styles fake what can be achieved with the tailwind config
+                 you need to add the group-hover variant to scale and define your custom
+                 min width style.
+                 See https://codesandbox.io/s/tailwindcss-multilevel-dropdown-y91j7?file=/index.html
+                 for implementation with config file
+              */
+              .group:hover .group-hover\:scale-100 { transform: scale(1) }
+              .group:hover .group-hover\:-rotate-180 { transform: rotate(180deg) }
+              .scale-0 { transform: scale(0) }
+              .min-w-32 { min-width: 8rem }
+            </style>
+          </li>
+          <li>
+          <a href="#abousys" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-red-700 md:p-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">À propos de nous</font></font></a>
+          </li>
+          <!-- <li>
+          <a href="#" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">Contact</a>
+          </li> -->
+          <li>
+          <a href="#contactus" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-red-700 md:p-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contact</font></font></a>
+          </li>
+          <li>
+             
+          <form action="" class="relative ">
+            <input type="search" id="searchInput" autocomplete="off" class=" peer cursor-pointer relative z-10 mb-[-30px] w-12 border-gray-400 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-red-500 focus:pl-16 focus:pr-4 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="absolute inset-y-[-5px]  h-8 w-11 border-r border-transparent stroke-red-500 px-3.5  peer-focus:stroke-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </form>
+      <div class="mt-5">
+          <a id="cardContainer" class=" hidden">
+            
+          </a>
+
+        </div>
+          </li>
+          <li>
+          
+      </li></ul>
+      </div>
+  </div>
+  
+  </nav>
+  
+</div>
+
+  <!-- <p class="mt-5">This dropdown navbar element is part of a larger, open-source library of Tailwind CSS components. Learn more by going to the official <a class="text-blue-600 hover:underline" href="#" target="_blank">Flowbite Documentation</a>.</p>
+</div> -->
+ 
+<script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+        <!-- <div class="flex items-center justify-center">
+          <ul class="flex space-x-4">
+            <a href="#">
+            <li class="text-black font-semibold hover:text-red-500">Home</li></a>
+            <div class="dropdown inline-block">
+              <a href=""><li class="dropbtn border-0 text-base text-black">Products</li></a>
+              <div class="dropdown-content absolute z-10 hidden min-w-[160px] rounded-lg border border-solid border-red-600 bg-white shadow-md">
+                <a href="#" class="block px-4 py-3 text-center text-black hover:text-red-600">Option</a>
+                <a href="#" class="block px-4 py-3 text-center text-black hover:text-red-600">Option</a>
+                <a href="#" class="block px-4 py-3 text-center text-black hover:text-red-600">Option</a>
+              </div>
+            </div>
+            <li class="text-black font-semibold hover:text-red-500">Home</li></a>
+            <li class="text-black font-semibold hover:text-red-500">Home</li></a>
+            
+          </ul>
+        </div> -->
+ 
+    
+   
+    
+       
+      </nav>
+     
+ 
+      
+    </header> 
+    
+  </div> 
+        <!-- Allez Hssaine -->
+        
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+          </style>
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+            .josefin-sans {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+ 
+}
+            .josefin-sans-thin {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+ 
+}
+          </style>
+
+    <div class="grid lg:grid-cols-2 grid-cols-1  lg:gap-14 gap-7">
+         <div class="order-1 lg:order-none lg:ml-32 lg:mt-36  mx-10 ">
+            <h1 class="text-5xl font-bold fade-in-element    text-red-700 "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BIENVENUE CHEZ </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SH-SCOOTERS</font></font></h1>
+            <p class="text-gray-500 fade-in-element josefin-sans font-thin py-7 "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La première boutique en ligne marocaine </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">où vous pouvez trouver tout ce qui concerne </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">les trottinettes électriques</font></font></p>
+            <a href="#Startshopping">
+            <button class="rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Commencer vos achats</font></font></button>
+          </a>
+          </div>
+          <div class="swiper-container lg:rounded-bl-3xl ">                          
+            <div class="swiper sample-slider lg:rounded-bl-3xl swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress">
+                <div class="swiper-wrapper" id="swiper-wrapper-2610d70aab72857410" aria-live="off" style="transform: translate3d(-2796px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" style="width: 932px; transform: translate3d(0px, 0px, -300px) rotateX(0deg) rotateY(150deg) scale(1); z-index: -2; transition-duration: 0ms;" role="group" aria-label="3 / 3"><img src="images/Background3.jpg  " alt="" class="image1 float-right lg:rounded-bl-3xl"><div class="swiper-slide-shadow-left" style="opacity: 3; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                  <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 932px; transform: translate3d(0px, 0px, -200px) rotateX(0deg) rotateY(100deg) scale(1); z-index: -1; transition-duration: 0ms;" role="group" aria-label="1 / 3"><img src="images/Background1.jpg" alt="" class="image1 float-right lg:rounded-bl-3xl"><div class="swiper-slide-shadow-left" style="opacity: 2; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                    <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 932px; transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(50deg) scale(1); z-index: 0; transition-duration: 0ms;" role="group" aria-label="2 / 3"><img src="images/Background2.jpg" alt="" class="image1 float-right lg:rounded-bl-3xl"><div class="swiper-slide-shadow-left" style="opacity: 1; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                      <div class="swiper-slide swiper-slide-visible swiper-slide-active" data-swiper-slide-index="2" style="width: 932px; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 1; transition-duration: 0ms;" role="group" aria-label="3 / 3"><img src="images/Background3.jpg  " alt="" class="image1 float-right lg:rounded-bl-3xl"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>  
+                <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 932px; transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(-50deg) scale(1); z-index: 0; transition-duration: 0ms;"><img src="images/Background1.jpg" alt="" class="image1 float-right lg:rounded-bl-3xl"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 1; transition-duration: 0ms;"></div></div></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Diapositive précédente" aria-controls="swiper-wrapper-2610d70aab72857410"></div>              
+            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Diapositive suivante" aria-controls="swiper-wrapper-2610d70aab72857410"></div>              
+        </div>  
+        
+     
+      
+    </div>
+      <div class="grid lg:mt-36 mt-10  gap-5 grid-cols-3">
+        <div class="h-lil lg:mx-6 mt-4 rounded-full bg-red-500"></div>
+        <h1 class="text-center lg:text-2xl josefin-sans  font-semibold text-black"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DÉCOUVREZ NOS TECHNOLOGIES</font></font></h1>
+        <div class="h-lil lg:mx-6 mt-4 rounded-full bg-red-500"></div>
+      </div>
+      <div id="Startshopping" class=" flex flex-wrap grow place-content-center gap-1  ">
+   <style>
+    .fade-in-element {
+      
+    opacity: 0; /* Initially set the opacity to 0 */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the animation */
+}
+
+.fade-in-element {
+    opacity: 0; /* Initially set the opacity to 0 */
+    position: relative; /* Enable positioning for animation */
+    left: -20px; /* Start off the screen to the left */
+    animation: fadeInLeft 0.5s ease-in-out forwards; /* Apply the animation */
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0; /* Start with fully transparent */
+        left: -20px; /* Start off the screen to the left */
+    }
+    to {
+        opacity: 1; /* End with fully opaque */
+        left: 0; /* Move to the normal position */
+    }
+}
+
+   </style>
+<div class="fade-in-element group relative transition duration-500 hover:scale-110  m-10  w-96 overflow-hidden rounded-lg shadow-2xl  ">
+  <div class="relative overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init="" data-te-ripple-color="light">
+    <img class=" w-full" src="images/1111.png" alt="">
+    <a href="#!">
+      
+    </a>
+  </div>  
+  <div class="p-6">
+
+    <h5 class=":text-neutral-50 mb-2 relative  bottom-20 text-2xl josefin-sans font-bold leading-tight text-red-600 text-center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grande vitesse</font></font></h5>
+    <p class=":text-neutral-200 mb-4 text-base relative bottom-10 josefin-sans text-neutral-600"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quelques exemples de texte rapides pour s'appuyer sur le titre de la carte et constituer l'essentiel du contenu de la carte.</font></font></p>
+    <a href="scooters.html">
+    <button type="button" class="w-full  hover:bg-primary-600 focus:bg-primary-600 active:bg-primary-700 :shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] :hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]" data-te-ripple-init="" data-te-ripple-color="light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ACHETER</font></font></button></a>
+  </div>
+</div>
+ 
+<div class="fade-in-element group relative m-10 transform transition duration-500 hover:scale-110   w-96 overflow-hidden rounded-lg shadow-2xl">
+  <div class="relative overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init="" data-te-ripple-color="light">
+    <img class=" w-full" src="images/2222.png" alt="">
+    <a href="#!">
+      
+    </a>
+  </div>  
+  <div class="p-6">
+<a href="scooters.html">
+    <h5 class=":text-neutral-50 mb-2 relative  bottom-20 josefin-sans text-2xl font-bold leading-tight text-red-600 text-center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pliable</font></font></h5>
+    <p class=":text-neutral-200 mb-4 text-base relative josefin-sans bottom-10 text-neutral-600"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quelques exemples de texte rapides pour s'appuyer sur le titre de la carte et constituer l'essentiel du contenu de la carte.</font></font></p>
+    <button type="button" class="w-full rounded hover:bg-primary-600 focus:bg-primary-600 active:bg-primary-700 :shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] :hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]  bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]" data-te-ripple-init="" data-te-ripple-color="light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ACHETER</font></font></button></a>
+  </div>
+</div>
+<div class="fade-in-element group relative m-10  w-96 transition duration-500 hover:scale-110 overflow-hidden rounded-lg shadow-2xl">
+  <div class="relative overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init="" data-te-ripple-color="light">
+    <img class=" w-full" src="images/3333.png" alt="">
+    <a href="#!">
+      
+    </a>
+  </div>  
+  <div class="p-6">
+
+    <h5 class=":text-neutral-50 mb-2 relative  bottom-20 text-2xl josefin-sans font-bold leading-tight text-red-600 text-center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Accessoires</font></font></h5>
+    <p class=":text-neutral-200 mb-4 text-base relative bottom-10 josefin-sans text-neutral-600"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quelques exemples de texte rapides pour s'appuyer sur le titre de la carte et constituer l'essentiel du contenu de la carte.</font></font></p>
+    <a href="acce.html">
+    <button type="button" class="w-full hover:bg-primary-600 focus:bg-primary-600 active:bg-primary-700 :shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] :hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] :active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] inline-block rounded bg-red-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]" data-te-ripple-init="" data-te-ripple-color="light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ACHETER</font></font></button></a>
+  </div>
+</div>
+</div>
+<div class=" relative" id="abousys">
+<img src="images/w9.png" class="image2 mt-32  " alt="">
+<h1 class=" absolute text-white text-4xl lg:text-5xl font-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">À propos de nous</font></font></h1>
+</div>
+<div>
+  
+    <div class="mx-10 mt-10 flex-wrap  grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:py-16 lg:mx-40">
+      <div class=" font-light text-gray-500 sm:text-lg">
+        <h2 class=" mb-4 text-4xl font-extrabold tracking-tight text-red-600"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Qui sommes nous?</font></font></h2>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dicta consequuntur fugiat, exercitationem omnis ratione beatae iure aliquam repudiandae accusantium maiores eligendi quidem minima. Ab est, sed harum accusamus rem inventore ipsa praesentium reprehenderit sint dolorum, tenetur quasi quod eos esse doloremque perferendis? Perspiciatis laborum similique, quaerat fugit itaque obcaecati doloremque labore autem, fugiat eum quo odio voluptas iste. Temporibus ipsum alias repellendus nobis quam doloribus ea vero ducimus totam suscipit explicabo magni laboriosam, tempora ab id repudiandae sunt. Quaerat sequi porro, iusto debitis ipsa fugit hic? Suscipit magni repellat nemo impedit commodi, dolorem temporibus, exercitationem voluptatem fugiat doloremque assumenda!</p>
+      </div>
+      <div class="flex justify-center lg:justify-end"> <!-- Use flex to align image to the right -->
+        <img class="lg:max-w-md  rounded-lg lg:grayscale shadow-2xl shadow-black transition-all duration-300 lg:hover:grayscale-0 lg:hover:shadow-2xl hover:shadow-black" src="images/sh bsg.png" alt="">
+      </div>
+    </div>
+
+    <!-- <div class="mx-40 grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:py-16">
+      
+   
+        <img class="max-w-md rounded-lg grayscale transition-all duration-300 hover:grayscale-0 hover:shadow-2xl hover:shadow-black" src="images/sh bsg.png" alt="">
+      
+      <div class=" font-light text-gray-500 sm:text-lg">
+        <h2 class=" mb-4 text-4xl font-extrabold tracking-tight text-blue-900">Our Company</h2>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dicta consequuntur fugiat, exercitationem omnis ratione beatae iure aliquam repudiandae accusantium maiores eligendi quidem minima. Ab est, sed harum accusamus rem inventore ipsa praesentium reprehenderit sint dolorum, tenetur quasi quod eos esse doloremque perferendis? Perspiciatis laborum similique, quaerat fugit itaque obcaecati doloremque labore autem, fugiat eum quo odio voluptas iste. Temporibus ipsum alias repellendus nobis quam doloribus ea vero ducimus totam suscipit explicabo magni laboriosam, tempora ab id repudiandae sunt. Quaerat sequi porro, iusto debitis ipsa fugit hic? Suscipit magni repellat nemo impedit commodi, dolorem temporibus, exercitationem voluptatem fugiat doloremque assumenda!</p>
+      </div>
+    </div>
+  -->
+ 
+    <section id="contactus">
+      <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-600">Contact Us</h2>
+          <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">  </p>
+          <form action="#" class="space-y-8">
+              <div>
+                  <label for="email" class="block mb-2 text-sm font-medium dark:text-gray-600">Your email</label>
+                  <input type="email" id="email" class="shadow-sm bg-gray-50 border border-red-700 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="Wa Hssaine@gmail.com" required="">
+              </div>
+             
+              <div class="sm:col-span-2">
+                  <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                  <textarea id="message" rows="6" class="block p-2.5 w-full text-sm rounded-lg shadow-sm border border-red-700 focus:ring-primary-500 focus:border-primary-500  placeholder=" leave="" a="" comment..."=""></textarea>
+              </div>
+              <button type="submit" class="py-3 px-5 text-sm font-medium text-center bg-red-700 text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+          </form>
+      </div>
+    </section>
+
+    
+      
+<footer class=" ">
+  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <hr class="my-6 border-red-700 sm:mx-autolg:my-8">
+      <div class="md:flex md:justify-between">
+        
+        <div class="grid grid-cols-2 gap-16 sm:gap-10 sm:grid-cols-3">
+            <div>
+                <h1 class="text-2xl font-bold  text-gray-900 uppercase ">Let's Keep In Touch</h1>
+                <p class="my-6 font-thin"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Trouvez-nous sur l'une de ces plateformes, nous répondons sous 1 à 2 jours ouvrables</font></font></p>
+                <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+                
+                  <button class="border border-red-700 rounded-full p-3 shadow-xl hover:shadow-xl hover:shadow-red-300">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="#ff0000
+                    " viewBox="0 0 24 24">
+                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                  </svg>
+                  
+                  
+                </button>
+                <button class="border border-red-700 rounded-full p-3 shadow-xl hover:shadow-xl hover:shadow-red-300">
+                  
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="#ff0000
+  " viewBox="0 0 24 24">
+  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+</svg>
+              </button>
+              <button class="border border-red-700 rounded-full p-3 shadow-xl hover:shadow-sm hover:shadow-red-300">
+                  
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="#ff0000
+                " viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+              </svg>
+            </button>
+                 
+              </div>
+            </div>
+            <div>
+              <h1 class="text-2xl font-bold  text-gray-900 uppercase "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aide</font></font></h1>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mt-6 mb-6">
+                        <a href="#" class="hover:underline "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Merci beaucoup.</font></font></a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Merci beaucoup.</font></font></a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+              <h1 class="text-2xl font-bold  text-gray-900 uppercase "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Trouve nous</font></font></h1>
+              <div class="">
+              <iframe class="w-3/4 h-3/4 rounded-lg shadow-sm shadow-black" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2503.6311278532676!2d-5.573054456274791!3d33.8575201845286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda05aaf634bac87%3A0x64bfe117d2e27d7d!2sNational%20Graduate%20School%20of%20Arts%20and%20Crafts!5e1!3m2!1sen!2sma!4v1692226531498!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+        </div>
+    </div>
+    <hr class="my-6 border-red-700 sm:mx-autolg:my-8">
+    <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2023 </font></font><a href="http://schoolapp.ensam-umi.ac.ma/schoolapp/login" class="hover:underline"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IAWAT™</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">Tous droits réservés.
+        </font></font></span>
+        
+    </div>
+  </div>
+</footer>
+<a href="https://api.whatsapp.com/send?phone=51955081075&amp;text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+  <i class="fa fa-whatsapp my-float"></i>
+  </a>
+  <style>
+    .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+  </style>
+
+<!-- Code injected by live-server -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.sample-slider', {
+    effect: 'coverflow',
+      loop: true,                        
+      autoplay: {                         
+          delay: 2000,  
+      },   
+      navigation: {                       
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+  })
+</script>
+
+<!-- Include jQuery library (add this in the <head> section) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Your other scripts and stylesheets -->
+  
+  <script>
+  $(document).ready(function() {
+      $('a[href^="#"]').on('click', function(event) {
+          event.preventDefault();
+          var target = $(this.getAttribute('href'));
+          if (target.length) {
+              $('html, body').stop().animate({
+                  scrollTop: target.offset().top
+              }, 1000); // Adjust the scroll speed (in milliseconds) as needed
+          }
+      });
+  });
+  </script>
+  
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const cardContainer = document.getElementById('cardContainer');
+    let isInputFocused = false;
+
+    const data = [
+      // This is an example data array. Replace it with your actual data.
+      { title: 'SH EXTREME 2',content:'',imageSrc:'images/Trot44-1.png', link: 'Sh-extreme2.html' },
+      { title: 'Zero GT PRO',content:'',imageSrc:'images/SingleTrot.png', link: 'Zerogtpro.html' },
+      { title: 'Zero 13X',content:'',imageSrc:'images/slider teleZero113X.png', link: 'Zero13x.html' },
+      { title: 'SH EXTREME 2 WITH SEAT',content:'',imageSrc:'images/withseatslider tele.png', link: 'SH EXTREME 2 WITH SEAT.html' },
+      { title: 'SH Troti',content:'',imageSrc:'images/slider teleSHTroti.png', link: 'ShTroti.html' },
+      { title: 'S9 Plus',content:'',imageSrc:'images/', link: 'S9PLUS.html' },
+      { title: 'SH Nitro',content:'',imageSrc:'images/Nitroslider tele.png', link: 'SHnitro.html' },
+      { title: 'Zero 13 X2',content:'',imageSrc:'images/', link: 'ZERO13X2.html' },
+      
+      // Add more data items as needed
+    ];
+
+    searchInput.addEventListener('focus', () => {
+      isInputFocused = true;
+      cardContainer.classList.remove('hidden');
+    });
+
+    searchInput.addEventListener('blur', () => {
+      isInputFocused = false;
+      // Delay hiding the card container to allow click on the container before it disappears
+      setTimeout(() => {
+        if (!isInputFocused) {
+          cardContainer.classList.add('hidden');
+        }
+      }, 100);
+    });
+
+    searchInput.addEventListener('input', event => {
+      const searchTerm = event.target.value.trim(); // Remove leading/trailing whitespace
+      if (searchTerm.length > 0) {
+        cardContainer.classList.remove('hidden');
+        updateCards(searchTerm);
+      } else {
+        cardContainer.classList.add('hidden');
+        clearCards();
+      }
+    });
+
+    function updateCards(searchTerm) {
+      clearCards();
+
+      const filteredData = data.filter(item => item.title.toLowerCase().includes(searchTerm.toLowerCase()));
+
+      filteredData.forEach(item => {
+  const card = document.createElement('a'); // Use <a> element for the card
+  card.href = item.link; // Set the link URL
+  card.classList.add('border', 'p-4', 'm-2', 'bg-white', 'flex', 'items-center', 'relative'); // Add relative positioning
+  card.style.textDecoration = 'none'; // Remove underlines from the link
+  card.innerHTML = `
+    <h2 class="text-lg font-semibold">${item.title}</h2>
+    <p class="text-gray-600">${item.content}</p>
+    <div class="flex-grow"></div> <!-- Create a flexible space -->
+    <img src="${item.imageSrc}" alt="${item.title}" class="w-12 ml-10"> <!-- Small image -->
+  `;
+  cardContainer.appendChild(card);
+});
+
+
+
+
+
+    }
+
+    function clearCards() {
+      cardContainer.innerHTML = '';
+    }
+  </script>
+<script>
+  const productsDropdownButton = document.getElementById("dropdownNavbarLink");
+  const productsDropdownMenu = document.getElementById("dropdownNavbar");
+  const accessoriesDropdownButton = document.getElementById("accessoriesDropdownLink");
+  const accessoriesDropdownMenu = document.getElementById("accessoriesDropdown");
+
+  // productsDropdownButton.addEventListener("click", () => {
+  //     productsDropdownMenu.classList.toggle("hidden");
+  // });
+
+  accessoriesDropdownButton.addEventListener("click", (event) => {
+      event.stopPropagation(); // Prevent the click event from reaching the parent
+      accessoriesDropdownMenu.classList.toggle("hidden");
+      productsDropdownMenu.classList.toggle("hidden");
+      
+      
+
+  });
+</script>
+
+</body></html>

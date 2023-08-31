@@ -6,10 +6,15 @@
     <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="css/me.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
 
     <title>Document</title>
 </head>
-<style>
+
+<!-- <style>
   .preloader {
     /* Position and dimensions */
     position: fixed;
@@ -43,7 +48,7 @@
     </svg>
   </div>
   
-</div>
+</div> -->
 <div class="content">
   <!-- Your actual content here -->
 
@@ -76,17 +81,45 @@
   <div class="flex justify-center">
 
   
-    <header class=" w-2/3 shadow-black-400 top-0 z-10  mt-6  bg-white bg-opacity-80 p-4 shadow-2xl border-2 border-red-300">
+    <header class="  w-2/3 shadow-black-400 top-0 z-10  mt-6  bg-white bg-opacity-80 p-4 shadow-2xl border-2 border-red-300">
       <a href="index.html">
       <img src="images/SH-LOGO.png" class="w-12 absolute" alt="">
     </a>
+   
       <nav >
+        <div class="">
+          <button id="states-button" data-dropdown-toggle="dropdown-states" class="flex-shrink-0 r z-10 inline-flex items-center mb-[-51px] mt-0 ml-[7.5rem] text-sm font-medium text-center text-gray-500border rounded-l-lg  focus:ring-4 focus:outline-none focus:ring-gray-100" type="button">
+              <svg aria-hidden="true" class="h-3 mr-2" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" width="14" height="12" rx="2" fill="white"/><mask id="mask0_12694_49953" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="12"><rect x="0.5" width="14" height="12" rx="2" fill="white"/></mask><g mask="url(#mask0_12694_49953)"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 0H0.5V0.8H14.5V0ZM14.5 1.6H0.5V2.4H14.5V1.6ZM0.5 3.2H14.5V4H0.5V3.2ZM14.5 4.8H0.5V5.6H14.5V4.8ZM0.5 6.4H14.5V7.2H0.5V6.4ZM14.5 8H0.5V8.8H14.5V8ZM0.5 9.6H14.5V10.4H0.5V9.6ZM14.5 11.2H0.5V12H14.5V11.2Z" fill="#D02F44"/><rect x="0.5" width="6" height="5.6" fill="#46467F"/><g filter="url(#filter0_d_12694_49953)"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.83317 1.20005C1.83317 1.42096 1.68393 1.60005 1.49984 1.60005C1.31574 1.60005 1.1665 1.42096 1.1665 1.20005C1.1665 0.979135 1.31574 0.800049 1.49984 0.800049C1.68393 0.800049 1.83317 0.979135 1.83317 1.20005ZM3.1665 1.20005C3.1665 1.42096 3.01727 1.60005 2.83317 1.60005C2.64908 1.60005 2.49984 1.42096 2.49984 1.20005C2.49984 0.979135 2.64908 0.800049 2.83317 0.800049C3.01727 0.800049 3.1665 0.979135 3.1665 1.20005ZM4.1665 1.60005C4.3506 1.60005 4.49984 1.42096 4.49984 1.20005C4.49984 0.979135 4.3506 0.800049 4.1665 0.800049C3.98241 0.800049 3.83317 0.979135 3.83317 1.20005C3.83317 1.42096 3.98241 1.60005 4.1665 1.60005ZM5.83317 1.20005C5.83317 1.42096 5.68393 1.60005 5.49984 1.60005C5.31574 1.60005 5.1665 1.42096 5.1665 1.20005C5.1665 0.979135 5.31574 0.800049 5.49984 0.800049C5.68393 0.800049 5.83317 0.979135 5.83317 1.20005ZM2.1665 2.40005C2.3506 2.40005 2.49984 2.22096 2.49984 2.00005C2.49984 1.77913 2.3506 1.60005 2.1665 1.60005C1.98241 1.60005 1.83317 1.77913 1.83317 2.00005C1.83317 2.22096 1.98241 2.40005 2.1665 2.40005ZM3.83317 2.00005C3.83317 2.22096 3.68393 2.40005 3.49984 2.40005C3.31574 2.40005 3.1665 2.22096 3.1665 2.00005C3.1665 1.77913 3.31574 1.60005 3.49984 1.60005C3.68393 1.60005 3.83317 1.77913 3.83317 2.00005ZM4.83317 2.40005C5.01726 2.40005 5.1665 2.22096 5.1665 2.00005C5.1665 1.77913 5.01726 1.60005 4.83317 1.60005C4.64908 1.60005 4.49984 1.77913 4.49984 2.00005C4.49984 2.22096 4.64908 2.40005 4.83317 2.40005ZM5.83317 2.80005C5.83317 3.02096 5.68393 3.20005 5.49984 3.20005C5.31574 3.20005 5.1665 3.02096 5.1665 2.80005C5.1665 2.57914 5.31574 2.40005 5.49984 2.40005C5.68393 2.40005 5.83317 2.57914 5.83317 2.80005ZM4.1665 3.20005C4.3506 3.20005 4.49984 3.02096 4.49984 2.80005C4.49984 2.57914 4.3506 2.40005 4.1665 2.40005C3.98241 2.40005 3.83317 2.57914 3.83317 2.80005C3.83317 3.02096 3.98241 3.20005 4.1665 3.20005ZM3.1665 2.80005C3.1665 3.02096 3.01727 3.20005 2.83317 3.20005C2.64908 3.20005 2.49984 3.02096 2.49984 2.80005C2.49984 2.57914 2.64908 2.40005 2.83317 2.40005C3.01727 2.40005 3.1665 2.57914 3.1665 2.80005ZM1.49984 3.20005C1.68393 3.20005 1.83317 3.02096 1.83317 2.80005C1.83317 2.57914 1.68393 2.40005 1.49984 2.40005C1.31574 2.40005 1.1665 2.57914 1.1665 2.80005C1.1665 3.02096 1.31574 3.20005 1.49984 3.20005ZM2.49984 3.60005C2.49984 3.82096 2.3506 4.00005 2.1665 4.00005C1.98241 4.00005 1.83317 3.82096 1.83317 3.60005C1.83317 3.37913 1.98241 3.20005 2.1665 3.20005C2.3506 3.20005 2.49984 3.37913 2.49984 3.60005ZM3.49984 4.00005C3.68393 4.00005 3.83317 3.82096 3.83317 3.60005C3.83317 3.37913 3.68393 3.20005 3.49984 3.20005C3.31574 3.20005 3.1665 3.37913 3.1665 3.60005C3.1665 3.82096 3.31574 4.00005 3.49984 4.00005ZM5.1665 3.60005C5.1665 3.82096 5.01726 4.00005 4.83317 4.00005C4.64908 4.00005 4.49984 3.82096 4.49984 3.60005C4.49984 3.37913 4.64908 3.20005 4.83317 3.20005C5.01726 3.20005 5.1665 3.37913 5.1665 3.60005ZM5.49984 4.80005C5.68393 4.80005 5.83317 4.62096 5.83317 4.40005C5.83317 4.17913 5.68393 4.00005 5.49984 4.00005C5.31574 4.00005 5.1665 4.17913 5.1665 4.40005C5.1665 4.62096 5.31574 4.80005 5.49984 4.80005ZM4.49984 4.40005C4.49984 4.62096 4.3506 4.80005 4.1665 4.80005C3.98241 4.80005 3.83317 4.62096 3.83317 4.40005C3.83317 4.17913 3.98241 4.00005 4.1665 4.00005C4.3506 4.00005 4.49984 4.17913 4.49984 4.40005ZM2.83317 4.80005C3.01727 4.80005 3.1665 4.62096 3.1665 4.40005C3.1665 4.17913 3.01727 4.00005 2.83317 4.00005C2.64908 4.00005 2.49984 4.17913 2.49984 4.40005C2.49984 4.62096 2.64908 4.80005 2.83317 4.80005ZM1.83317 4.40005C1.83317 4.62096 1.68393 4.80005 1.49984 4.80005C1.31574 4.80005 1.1665 4.62096 1.1665 4.40005C1.1665 4.17913 1.31574 4.00005 1.49984 4.00005C1.68393 4.00005 1.83317 4.17913 1.83317 4.40005Z" fill="url(#paint0_linear_12694_49953)"/></g></g><defs><filter id="filter0_d_12694_49953" x="1.1665" y="0.800049" width="4.6665" height="5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="1"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_12694_49953"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_12694_49953" result="shape"/></filter><linearGradient id="paint0_linear_12694_49953" x1="1.1665" y1="0.800049" x2="1.1665" y2="4.80005" gradientUnits="userSpaceOnUse"><stop stop-color="white"/><stop offset="1" stop-color="#F0F0F0"/></linearGradient></defs></svg>
+              English<svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+        </svg>
+          </button>
+          <div id="dropdown-states" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="states-button">
+                  <li>
+                      <a href="scooters_fr.html"  class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-red-600  hover:text-white ">
+                          <div class="inline-flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 mr-3" viewBox="0 0 3 2"><path fill="#EC1920" d="M0 0h3v2H0z"/><path fill="#fff" d="M0 0h2v2H0z"/><path fill="#051440" d="M0 0h1v2H0z"/></svg>           
+                              Français
+                          </div>
+                      
+                        </a>
+                  </li>
+                  
+        </div>
         <!-- component -->
 <!-- This is an example component -->
 <div class="max-w-2xl mx-auto">
     
   <nav class="border-gray-200">
   <div class="container mx-auto flex flex-wrap items-center lg:justify-center justify-between">
+    <!-- <form action="" class="relative l3iba2  mt-[-11px] ml-1.5">
+      <input type="search" 
+            class=" peer cursor-pointer relative  z-10 mb-[-30px] w-12 border-gray-400 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-red-500 focus:pl-16 focus:pr-4" />
+      <svg xmlns="http://www.w3.org/2000/svg" class="absolute inset-y-[-5px]  h-8 w-11 border-r border-transparent stroke-red-500 px-3.5  peer-focus:stroke-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+    </form> -->
       <a href="#" class="flex">
       <!-- <svg class="h-10 mr-3" width="51" height="70" viewBox="0 0 51 70" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M1 53H27.9022C40.6587 53 51 42.7025 51 30H24.0978C11.3412 30 1 40.2975 1 53Z" fill="#76A9FA"></path><path d="M-0.876544 32.1644L-0.876544 66.411C11.9849 66.411 22.4111 55.9847 22.4111 43.1233L22.4111 8.87674C10.1196 8.98051 0.518714 19.5571 -0.876544 32.1644Z" fill="#A4CAFE"></path><path d="M50 5H23.0978C10.3413 5 0 15.2975 0 28H26.9022C39.6588 28 50 17.7025 50 5Z" fill="#1C64F2"></path></g><defs><clipPath id="clip0"><rect width="51" height="70" fill="white"></rect></clipPath></defs></svg> -->
           <!-- <span class="self-center text-lg font-semibold whitespace-nowrap">FlowBite</span> -->
@@ -102,39 +135,147 @@
           <a href="index.html" class="bg-red-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-red-700 md:p-0 rounded focus:outline-none" aria-current="page">Home</a>
           </li>
           <li>
-              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-red-700 md:p-0 font-medium flex items-center justify-between w-full md:w-auto">Products<svg class="w-4 h-4 ml-1  " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
-              <!-- Dropdown menu -->
-              <div id="dropdownNavbar" class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
-                  <ul class="py-1" aria-labelledby="dropdownLargeButton">
-                  <li>
-                      <a href="acce.html" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Accessories</a>
-                  </li>
-                  <li>
-                      <a href="scooters.html" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Scooters</a>
-                  </li>
-                  <!-- <li>
-                      <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Earnings</a>
-                  </li>
+            <div class="group inline-block">
+              <button
+                class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-red-700 md:p-0 font-medium flex items-center justify-between w-full md:w-auto flex-1"
+              >Products
+               
+                <span>
+                  <svg
+                    class="fill-current h-4 w-4 transform group-hover:-rotate-180
+                    transition duration-150 ease-in-out"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <ul
+                class="bg-white transform scale-0 group-hover:scale-100 absolute 
+              transition duration-50 ease-in-out origin-top rounded shadow  py-4  w-44"
+              > <a href="scooters.html">
+                <li class="rounded-sm px-3 py-1 text-gray-700 hover:bg-gray-100">Scooters</li></a>
+               
+                <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100">
+                  <button
+                    class="w-full text-left flex items-center outline-none focus:outline-none"
+                  >
+                    <span class="pr-1 text-gray-700 flex-1">Accessories</span>
+                    <span class="mr-auto">
+                      <svg
+                        class="fill-current h-4 w-4
+                        transition duration-150 ease-in-out"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul
+                    class="bg-white border rounded-sm absolute top-0 right-0 
+              transition duration-150 ease-in-out origin-top-left
+              min-w-32
+              "
+                  >
+                  <a href="acce.html">
+                    <li class="px-3 py-1 text-gray-700 hover:bg-gray-100">Xiaomi</li></a>
+                    <!-- <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100"> -->
+                      <!-- <button
+                        class="w-full text-left flex items-center outline-none focus:outline-none"
+                      >
+                        <span class="pr-1 flex-1">Python</span>
+                        <span class="mr-auto">
+                          <svg
+                            class="fill-current h-4 w-4
+                            transition duration-150 ease-in-out"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <ul
+                        class="bg-white border rounded-sm absolute top-0 right-0 
+                  transition duration-150 ease-in-out origin-top-left
+                  min-w-32
+                  "
+                      >
+                        <li class="px-3 py-1 hover:bg-gray-100">2.7</li>
+                        <li class="px-3 py-1 hover:bg-gray-100">3+</li>
+                      </ul>
+                    </li>
+                    <li class="px-3 py-1 hover:bg-gray-100">Go</li>
+                    <li class="px-3 py-1 hover:bg-gray-100">Rust</li>
                   </ul>
-                  <div class="py-1">
-                  <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Sign out</a>
-                  </div> -->
-              </div>
+                </li> -->
+                <li class="rounded-sm px-3 py-1 text-gray-700 hover:bg-gray-100">Testing</li>
+                <li class="rounded-sm px-3 py-1 text-gray-700 hover:bg-gray-100">Testing</li>
+              </ul>
+            </div>
+            
+            <style>
+              /* since nested groupes are not supported we have to use 
+                 regular css for the nested dropdowns 
+              */
+              li>ul                 { transform: translatex(100%) scale(0) }
+              li:hover>ul           { transform: translatex(101%) scale(1) }
+              li > button svg       { transform: rotate(-90deg) }
+              li:hover > button svg { transform: rotate(-270deg) }
+            
+              /* Below styles fake what can be achieved with the tailwind config
+                 you need to add the group-hover variant to scale and define your custom
+                 min width style.
+                 See https://codesandbox.io/s/tailwindcss-multilevel-dropdown-y91j7?file=/index.html
+                 for implementation with config file
+              */
+              .group:hover .group-hover\:scale-100 { transform: scale(1) }
+              .group:hover .group-hover\:-rotate-180 { transform: rotate(180deg) }
+              .scale-0 { transform: scale(0) }
+              .min-w-32 { min-width: 8rem }
+            </style>
           </li>
           <li>
-          <a href="index.html" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-red-700 md:p-0">About us</a>
+          <a href="#abousys" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-red-700 md:p-0">About us</a>
           </li>
           <!-- <li>
           <a href="#" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0">Contact</a>
           </li> -->
           <li>
-          <a href="index.html" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-red-700 md:p-0">Contact</a>
+          <a href="#contactus" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-red-700 md:p-0">Contact</a>
+          </li>
+          <li>
+             
+          <form action="" class="relative ">
+            <input type="search" id="searchInput" autocomplete="off"
+                  class=" peer cursor-pointer relative z-10 mb-[-30px] w-12 border-gray-400 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-red-500 focus:pl-16 focus:pr-4 " />
+            <svg xmlns="http://www.w3.org/2000/svg" class="absolute inset-y-[-5px]  h-8 w-11 border-r border-transparent stroke-red-500 px-3.5  peer-focus:stroke-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </form>
+      <div class="mt-5">
+          <div id="cardContainer" class=" hidden">
+            
+          </div>
+
+        </div>
           </li>
       </ul>
       </div>
   </div>
+  
   </nav>
+  
 </div>
+
   <!-- <p class="mt-5">This dropdown navbar element is part of a larger, open-source library of Tailwind CSS components. Learn more by going to the official <a class="text-blue-600 hover:underline" href="#" target="_blank">Flowbite Documentation</a>.</p>
 </div> -->
  
@@ -156,7 +297,15 @@
             
           </ul>
         </div> -->
+ 
+    
+   
+    
+       
       </nav>
+     
+ 
+      
     </header> 
    
 <style>
@@ -276,129 +425,728 @@
 
   <div class="l3iba2 ">
     <div class="grid grid-cols-1">
-    <div class="fade-in-element mt-20 flex items-center justify-center">
-  <div>
+    <div class="fade-in-element ml-10 mt-20 flex items-center justify-center">
+      <div class="swiper ">    
+        <div class="swiper-wrapper">
+       
+          <div class="swiper-slide">
+       
+  <div class="mt-36 ml-5">
       <img src="images/gnbgngngng.png" class="carta" alt="">
       <!-- <div class="relative mb-0 h-[150px]  w-[230px] ml-[4.25rem] bg-red-500 rounded-md shadow-black shadow-2xl">
         <img src="images/Trot44-1.png" class="absolute z-40 w-[8.25rem]  mt-[-4.25rem] ml-10" alt="">
       </div> -->
-      <div class="h-[374.6px] relative ml-[18px] mt-[-4.5rem] w-[275.87px] z-40 rounded-2xl  bg-white  shadow-black shadow-2xl">
+      <div class=" h-[645.6px] relative ml-[18px] mt-[-4.5rem] w-[275.87px] z-40 rounded-2xl  bg-white  shadow-black shadow-2xl">
+       
         <img src="images/Trot44-1.png"  class="carta2 absolute left-[4.75rem] z-40 w-[120px] top-[-2.75rem]" alt="">
+        <h1 class="absolute text text-2xl mt-36  ml-[4.25rem]  font-bold  text-black-600">SH EXTREME 2</h1>
+        <!-- <h1 class="absolute text-lg mt-[11rem]  ml-[113px]  font-bold  text-red-600">6000 Dh</h1> -->
+        <div class=" grid grid-cols-1">
+          <div class="mt-52 mb-[-28rem]">
+       
+            <div class=""> 
+              <div class="p-3 lg:p-5">
+                <div class=":bg-gray-800 shadow-lg shadow-gray-300 rounded-xl border-2 border-red-600 bg-gray-50 p-2 lg:p-6 ">
+                  <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                    <div class="mb-4 w-full md:w-2/5">
+                      <div class="flex">
+                        <span class="mr-3">
+                          <img src="images/icon1.png" fill="currentColor" class="h-8 w-7">
+                       
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Charging time</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">4-6 Hours</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon2.png" fill="currentColor" class="w-7">
+                            
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Max speed</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">70 KM/H</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon4.png" fill="currentColor" class="w-7">
+                            
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Motor</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">1200 W</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon34.png" fill="currentColor" class="w-7">
+                           
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Mileage</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">90-30km</h2> 
+                        </div>
+                        <!-- <a href="Sh-extreme2.html">
+
+                          <button  href="Sh-extreme2.html"  class="absolute mt-32 left-[9rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+    </div>
+    <a href="Sh-extreme2.html">
+    <button  class=" absolute ml-[5rem] mt-[28.5rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+  </div>
+</div>
+</div>
+
+  </div>
+          <div class="swiper-slide">
+       
+  <div class="mt-36 ml-5">
+      <img src="images/gnbgngngng.png" class="carta" alt="">
+      <!-- <div class="relative mb-0 h-[150px]  w-[230px] ml-[4.25rem] bg-red-500 rounded-md shadow-black shadow-2xl">
+        <img src="images/Trot44-1.png" class="absolute z-40 w-[8.25rem]  mt-[-4.25rem] ml-10" alt="">
+      </div> -->
+      <div class=" h-[645.6px] relative ml-[18px] mt-[-4.5rem] w-[275.87px] z-40 rounded-2xl  bg-white  shadow-black shadow-2xl">
+       
+        <img src="images/SingleTrot.png"  class="carta2 absolute left-[4.75rem] z-40 w-[120px] top-[-2.75rem]" alt="">
         <h1 class="absolute text-3xl mt-36  ml-[4.25rem]  font-bold  text-black-600">ZeroGT Pro</h1>
         <!-- <h1 class="absolute text-lg mt-[11rem]  ml-[113px]  font-bold  text-red-600">6000 Dh</h1> -->
-        <div class="grid grid-cols-1">
-          <div class="ml-[-36px] flex flex-wr mb-[-28rem] items-center">
-            <div class="w-32 text-l font-semibold text-center ml-[15px] ">Speed</div>
-            <div class="h-2 w-[7rem] bg-red-500 rounded-l-md"></div>
-            <div class="h-5 w-3 bg-slate-400 rounded-sm shadow-2xl">
-              <div class="-mt-6 -ml-4">
-                <p class="font-semibold"> 50KM/H</p>
+        <div class=" grid grid-cols-1">
+          <div class="mt-52 mb-[-28rem]">
+       
+            <div class=""> 
+              <div class="p-3 lg:p-5">
+                <div class=":bg-gray-800 shadow-lg shadow-gray-300 rounded-xl border-2 border-red-600 bg-gray-50 p-2 lg:p-6 ">
+                  <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                    <div class="mb-4 w-full md:w-2/5">
+                      <div class="flex">
+                        <span class="mr-3">
+                          <img src="images/icon1.png" fill="currentColor" class="h-8 w-7">
+                       
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Charging time</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">4-6 Hours</h2>
+                        </div>
                       </div>
-                      
-            </div>
-            </div>
-            <div class="ml-[-36px] flex flex-wr mb-[-35rem] items-center">
-              <div class="w-32 text-l font-semibold text-center ml-[15px] ">Charging <br> Time</div>
-              <div class="h-2 w-[6rem] bg-red-500 rounded-l-md"></div>
-              <div class="h-5 w-3 bg-slate-400 rounded-sm shadow-2xl">
-                <div class="-mt-6 -ml-4">
-                  <p class="font-semibold w-40 ">4-5 Hours</p>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon2.png" fill="currentColor" class="w-7">
+                            
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Max speed</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">40 KM/H</h2>
                         </div>
-
-        </div>
-
-
-    </div>
-    <a href="singleproduct.html">
-    <button  class=" absolute ml-[5rem] mt-[19.5rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
-  </div>
-</div>
-</div>
-
-  </div>
-
-  <div class="fade-in-element mt-20 ml-10 flex items-center justify-center">
-    <div>
-        <img src="images/gnbgngngng.png" class="carta" alt="">
-        <!-- <div class="relative mb-0 h-[150px]  w-[230px] ml-[4.25rem] bg-red-500 rounded-md shadow-black shadow-2xl">
-          <img src="images/Trot44-1.png" class="absolute z-40 w-[8.25rem]  mt-[-4.25rem] ml-10" alt="">
-        </div> -->
-        <div class="h-[374.6px] relative ml-[18px] mt-[-4.5rem] w-[275.87px] z-40 rounded-2xl  bg-white  shadow-black shadow-2xl">
-          <img src="images/Trot44-1.png"  class="carta2 absolute left-[4.75rem] z-40 w-[120px] top-[-2.75rem]" alt="">
-          <h1 class="absolute text-3xl mt-36  ml-[4.25rem]  font-bold  text-black-600">ZeroGT Pro</h1>
-          <!-- <h1 class="absolute text-lg mt-[11rem]  ml-[113px]  font-bold  text-red-600">6000 Dh</h1> -->
-          <div class="grid grid-cols-1">
-            <div class="ml-[-36px] flex flex-wr mb-[-28rem] items-center">
-              <div class="w-32 text-l font-semibold text-center ml-[15px] ">Speed</div>
-              <div class="h-2 w-[7rem] bg-red-500 rounded-l-md"></div>
-              <div class="h-5 w-3 bg-slate-400 rounded-sm shadow-2xl">
-                <div class="-mt-6 -ml-4">
-                  <p class="font-semibold"> 50KM/H</p>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon4.png" fill="currentColor" class="w-7">
+                            
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Motor</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">800W  W</h2>
                         </div>
-                        
-              </div>
-              </div>
-              <div class="ml-[-36px] flex flex-wr mb-[-35rem] items-center">
-                <div class="w-32 text-l font-semibold text-center ml-[15px] ">Charging <br> Time</div>
-                <div class="h-2 w-[6rem] bg-red-500 rounded-l-md"></div>
-                <div class="h-5 w-3 bg-slate-400 rounded-sm shadow-2xl">
-                  <div class="-mt-6 -ml-4">
-                    <p class="font-semibold w-40 ">4-5 Hours</p>
-                          </div>
-  
-          </div>
-  
-  
-      </div>
-      <a href="singleproduct.html">
-      <button  href="singleproduct.html"  class=" absolute ml-[5rem] mt-[19.5rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
-    </div>
-  </div>
-  </div>
-  
-    </div>
-    <div class=" mt-20 ml-10 flex items-center justify-center">
-      <div>
-          <img src="images/gnbgngngng.png" class="carta" alt="">
-          <!-- <div class="relative mb-0 h-[150px]  w-[230px] ml-[4.25rem] bg-red-500 rounded-md shadow-black shadow-2xl">
-            <img src="images/Trot44-1.png" class="absolute z-40 w-[8.25rem]  mt-[-4.25rem] ml-10" alt="">
-          </div> -->
-          <div class="h-[374.6px] relative ml-[18px] mt-[-4.5rem] w-[275.87px] z-40 rounded-2xl  bg-white  shadow-black shadow-2xl">
-            <img src="images/Trot44-1.png"  class="carta2 absolute left-[4.75rem] z-40 w-[120px] top-[-2.75rem]" alt="">
-            <h1 class="absolute text-3xl mt-36  ml-[4.25rem]  font-bold  text-black-600">ZeroGT Pro</h1>
-            <!-- <h1 class="absolute text-lg mt-[11rem]  ml-[113px]  font-bold  text-red-600">6000 Dh</h1> -->
-            <div class="grid grid-cols-1">
-              <div class="ml-[-36px] flex flex-wr mb-[-28rem] items-center">
-                <div class="w-32 text-l font-semibold text-center ml-[15px] ">Speed</div>
-                <div class="h-2 w-[7rem] bg-red-500 rounded-l-md"></div>
-                <div class="h-5 w-3 bg-slate-400 rounded-sm shadow-2xl">
-                  <div class="-mt-6 -ml-4">
-                    <p class="font-semibold"> 50KM/H</p>
-                          </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon34.png" fill="currentColor" class="w-7">
+                           
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Mileage</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">60-30KM</h2> 
+                        </div>
+                       
                           
+                      </div>
+                    </div>
+                    
+                  </div>
                 </div>
-                </div>
-                <div class="ml-[-36px] flex flex-wr mb-[-35rem] items-center">
-                  <div class="w-32 text-l font-semibold text-center ml-[15px] ">Charging <br> Time</div>
-                  <div class="h-2 w-[6rem] bg-red-500 rounded-l-md"></div>
-                  <div class="h-5 w-3 bg-slate-400 rounded-sm shadow-2xl">
-                    <div class="-mt-6 -ml-4">
-                      <p class="font-semibold w-40 ">4-5 Hours</p>
-                            </div>
+              </div>
+</div>
+
+
+    </div>
+    <a href="Zerogtpro.html">
+    <button  class=" absolute ml-[5rem] mt-[28.5rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+  </div>
+</div>
+</div>
+
+  </div>
+          <div class="swiper-slide">
+       
+  <div class="mt-36 ml-5">
+      <img src="images/gnbgngngng.png" class="carta" alt="">
+      <!-- <div class="relative mb-0 h-[150px]  w-[230px] ml-[4.25rem] bg-red-500 rounded-md shadow-black shadow-2xl">
+        <img src="images/Trot44-1.png" class="absolute z-40 w-[8.25rem]  mt-[-4.25rem] ml-10" alt="">
+      </div> -->
+      <div class=" h-[645.6px] relative ml-[18px] mt-[-4.5rem] w-[275.87px] z-40 rounded-2xl  bg-white  shadow-black shadow-2xl">
+       
+        <img src="images/slider teleZero113X.png"  class="carta2 absolute left-[4.75rem] z-40 w-[120px] top-[-2.75rem]" alt="">
+        <h1 class="absolute text-3xl mt-36  ml-[4.25rem]  font-bold  text-black-600">Zero 13X</h1>
+        <!-- <h1 class="absolute text-lg mt-[11rem]  ml-[113px]  font-bold  text-red-600">6000 Dh</h1> -->
+        <div class=" grid grid-cols-1">
+          <div class="mt-52 mb-[-28rem]">
+       
+                <div class=""> 
+                                    <div class="p-3 lg:p-5">
+                                      <div class=":bg-gray-800 shadow-lg shadow-gray-300 rounded-xl border-2 border-red-600 bg-gray-50 p-2 lg:p-6 ">
+                                        <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                                          <div class="mb-4 w-full md:w-2/5">
+                                            <div class="flex">
+                                              <span class="mr-3">
+                                                <img src="images/icon1.png" fill="currentColor" class="h-8 w-7">
+                                             
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Charging time</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">4-6 Hours</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon2.png" fill="currentColor" class="w-7">
+                                                  
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Max speed</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">60 KM/H</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon4.png" fill="currentColor" class="w-7">
+                                                  
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Motor</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">1200 W</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon34.png" fill="currentColor" class="w-7">
+                                                 
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Mileage</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">90-30KM</h2> 
+                                              </div>
+                                              <a href="Zero13x.html">
     
-            </div>
-    
-    
-        </div>
-        <a href="singleproduct.html">
-        <button  href="singleproduct.html"  class="  absolute ml-[5rem] mt-[19.5rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+                                                <button  href="singleproduct.html"  class="absolute mt-[6rem] left-[5rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+                                                
+                                            </div>
+                                          </div>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+          
+
+
+    </div>
+   
+  </div>
+</div>
+</div>
+
+  </div>
+
+  
       </div>
+          <div class="swiper-slide">
+       
+  <div class="mt-36 ml-5">
+      <img src="images/gnbgngngng.png" class="carta" alt="">
+      <!-- <div class="relative mb-0 h-[150px]  w-[230px] ml-[4.25rem] bg-red-500 rounded-md shadow-black shadow-2xl">
+        <img src="images/Trot44-1.png" class="absolute z-40 w-[8.25rem]  mt-[-4.25rem] ml-10" alt="">
+      </div> -->
+      <div class=" h-[645.6px] relative ml-[18px] mt-[-4.5rem] w-[275.87px] z-40 rounded-2xl  bg-white  shadow-black shadow-2xl">
+       
+        <img src="images/withseatslider tele.png"  class="carta2 absolute left-[4.75rem] z-40 w-[120px] top-[-2.75rem]" alt="">
+        <h1 class="absolute text-2xl mt-36  text-center font-bold  text-black-600">SH EXTREME 2 WITH SEAT</h1>
+        <!-- <h1 class="absolute text-lg mt-[11rem]  ml-[113px]  font-bold  text-red-600">6000 Dh</h1> -->
+        <div class=" grid grid-cols-1">
+          <div class="mt-52 mb-[-28rem]">
+       
+            <div class=""> 
+              <div class="p-3 lg:p-5">
+                <div class=":bg-gray-800 shadow-lg shadow-gray-300 rounded-xl border-2 border-red-600 bg-gray-50 p-2 lg:p-6 ">
+                  <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                    <div class="mb-4 w-full md:w-2/5">
+                      <div class="flex">
+                        <span class="mr-3">
+                          <img src="images/icon1.png" fill="currentColor" class="h-8 w-7">
+                       
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Charging time</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">4-6 Hours</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon2.png" fill="currentColor" class="w-7">
+                            
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Max speed</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">40 KM/H</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon4.png" fill="currentColor" class="w-7">
+                            
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Motor</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">800 W </h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon34.png" fill="currentColor" class="w-7">
+                           
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Mileage</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">60-30KM </h2> 
+                        </div>
+                        <a href="ShTroti.html">
+
+                          <button  href="singleproduct.html"  class="absolute mt-[6rem] left-[5rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+                          
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              </div>
+              </div>
+
+   
+  </div>
+</div>
+</div>
+
+  </div>
+          <div class="swiper-slide">
+       
+  <div class="mt-36 ml-5">
+      <img src="images/gnbgngngng.png" class="carta" alt="">
+      <!-- <div class="relative mb-0 h-[150px]  w-[230px] ml-[4.25rem] bg-red-500 rounded-md shadow-black shadow-2xl">
+        <img src="images/Trot44-1.png" class="absolute z-40 w-[8.25rem]  mt-[-4.25rem] ml-10" alt="">
+      </div> -->
+      <div class=" h-[645.6px] relative ml-[18px] mt-[-4.5rem] w-[275.87px] z-40 rounded-2xl  bg-white  shadow-black shadow-2xl">
+       
+        <img src="images/slider teleSHTroti.png"  class="carta2 absolute left-[4.75rem] z-40 w-[120px] top-[-2.75rem]" alt="">
+        <h1 class="absolute text-3xl mt-36  ml-[4.25rem]  font-bold  text-black-600">SH Troti</h1>
+        <!-- <h1 class="absolute text-lg mt-[11rem]  ml-[113px]  font-bold  text-red-600">6000 Dh</h1> -->
+        <div class=" grid grid-cols-1">
+          <div class="mt-52 mb-[-28rem]">
+       
+            <div class=""> 
+              <div class="p-3 lg:p-5">
+                <div class=":bg-gray-800 shadow-lg shadow-gray-300 rounded-xl border-2 border-red-600 bg-gray-50 p-2 lg:p-6 ">
+                  <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                    <div class="mb-4 w-full md:w-2/5">
+                      <div class="flex">
+                        <span class="mr-3">
+                          <img src="images/icon1.png" fill="currentColor" class="h-8 w-7">
+                       
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Charging time</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">4-6 Hours</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon2.png" fill="currentColor" class="w-7">
+                            
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Max speed</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">30 KM/H</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon4.png" fill="currentColor" class="w-7">
+                            
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Motor</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">350 W </h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon34.png" fill="currentColor" class="w-7">
+                           
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Mileage</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">15-30KM </h2> 
+                        </div>
+                        <a href="Zero13x.html">
+                          <button  href="singleproduct.html"  class="absolute mt-[6rem] left-[5rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+                          
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>
+
+   
+  </div>
+</div>
+</div>
+
+  </div>
+          <div class="swiper-slide">
+       
+  <div class="mt-36 ml-5">
+      <img src="images/gnbgngngng.png" class="carta" alt="">
+      <!-- <div class="relative mb-0 h-[150px]  w-[230px] ml-[4.25rem] bg-red-500 rounded-md shadow-black shadow-2xl">
+        <img src="images/Trot44-1.png" class="absolute z-40 w-[8.25rem]  mt-[-4.25rem] ml-10" alt="">
+      </div> -->
+      <div class=" h-[645.6px] relative ml-[18px] mt-[-4.5rem] w-[275.87px] z-40 rounded-2xl  bg-white  shadow-black shadow-2xl">
+       
+        <img src="images/S9slider tele.png"  class="carta2 absolute left-[4.75rem] z-40 w-[120px] top-[-2.75rem]" alt="">
+        <h1 class="absolute text-3xl mt-36  ml-[4.25rem]  font-bold  text-black-600">S9 Plus</h1>
+        <!-- <h1 class="absolute text-lg mt-[11rem]  ml-[113px]  font-bold  text-red-600">6000 Dh</h1> -->
+        <div class=" grid grid-cols-1">
+          <div class="mt-52 mb-[-28rem]">
+       
+            <div class=""> 
+              <div class="p-3 lg:p-5">
+                <div class=":bg-gray-800 shadow-lg shadow-gray-300 rounded-xl border-2 border-red-600 bg-gray-50 p-2 lg:p-6 ">
+                  <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                    <div class="mb-4 w-full md:w-2/5">
+                      <div class="flex">
+                        <span class="mr-3">
+                          <img src="images/icon1.png" fill="currentColor" class="h-8 w-7">
+                       
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Charging time</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">4-6 Hours</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon2.png" fill="currentColor" class="w-7">
+                            
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Max speed</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">40 KM/H</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon4.png" fill="currentColor" class="w-7">
+                            
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Motor</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">800 W </h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon34.png" fill="currentColor" class="w-7">
+                           
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Mileage</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">60-30KM </h2> 
+                        </div>
+                        <a href="S9PLUS.html">
+
+                          <button  href="singleproduct.html"  class="absolute mt-32 left-[9rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+                          
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>
+
+   
+  </div>
+</div>
+</div>
+
+  </div>
+          <div class="swiper-slide">
+       
+  <div class="mt-36 ml-5">
+      <img src="images/gnbgngngng.png" class="carta" alt="">
+      <!-- <div class="relative mb-0 h-[150px]  w-[230px] ml-[4.25rem] bg-red-500 rounded-md shadow-black shadow-2xl">
+        <img src="images/Trot44-1.png" class="absolute z-40 w-[8.25rem]  mt-[-4.25rem] ml-10" alt="">
+      </div> -->
+      <div class=" h-[645.6px] relative ml-[18px] mt-[-4.5rem] w-[275.87px] z-40 rounded-2xl  bg-white  shadow-black shadow-2xl">
+       
+        <img src="images/Nitroslider tele.png"  class="carta2 absolute left-[4.75rem] z-40 w-[120px] top-[-2.75rem]" alt="">
+        <h1 class="absolute text-3xl mt-36  ml-[4.25rem]  font-bold  text-black-600">SH Nitro</h1>
+        <!-- <h1 class="absolute text-lg mt-[11rem]  ml-[113px]  font-bold  text-red-600">6000 Dh</h1> -->
+        <div class=" grid grid-cols-1">
+          <div class="mt-52 mb-[-28rem]">
+       
+            <div class=""> 
+              <div class="p-3 lg:p-5">
+                <div class=":bg-gray-800 shadow-lg shadow-gray-300 rounded-xl border-2 border-red-600 bg-gray-50 p-2 lg:p-6 ">
+                  <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                    <div class="mb-4 w-full md:w-2/5">
+                      <div class="flex">
+                        <span class="mr-3">
+                          <img src="images/icon1.png" fill="currentColor" class="h-8 w-7">
+                       
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Charging time</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">4-6 Hours</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon2.png" fill="currentColor" class="w-7">
+                            
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Max speed</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">60 KM/H</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon4.png" fill="currentColor" class="w-7">
+                            
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Motor</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">800 W </h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon34.png" fill="currentColor" class="w-7">
+                           
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Mileage</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">90-30KM </h2> 
+                        </div>
+                        <a href="SHnitro.html">
+                          <button  href="singleproduct.html"  class="absolute mt-[6rem] left-[5rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+                          
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              </div>
+
+   
+  </div>
+</div>
+</div>
+
+  </div>
+          <div class="swiper-slide">
+       
+  <div class="mt-36 ml-5">
+      <img src="images/gnbgngngng.png" class="carta" alt="">
+      <!-- <div class="relative mb-0 h-[150px]  w-[230px] ml-[4.25rem] bg-red-500 rounded-md shadow-black shadow-2xl">
+        <img src="images/Trot44-1.png" class="absolute z-40 w-[8.25rem]  mt-[-4.25rem] ml-10" alt="">
+      </div> -->
+      <div class=" h-[645.6px] relative ml-[18px] mt-[-4.5rem] w-[275.87px] z-40 rounded-2xl  bg-white  shadow-black shadow-2xl">
+       
+        <img src="images/X2slider tele.png"  class="carta2 absolute left-[4.75rem] z-40 w-[120px] top-[-2.75rem]" alt="">
+        <h1 class="absolute text-3xl mt-36  ml-[4.25rem]  font-bold  text-black-600">SH Nitro</h1>
+        <!-- <h1 class="absolute text-lg mt-[11rem]  ml-[113px]  font-bold  text-red-600">6000 Dh</h1> -->
+        <div class=" grid grid-cols-1">
+          <div class="mt-52 mb-[-28rem]">
+       
+              
+            <div class=""> 
+              <div class="p-3 lg:p-5">
+                <div class=":bg-gray-800 shadow-lg shadow-gray-300 rounded-xl border-2 border-red-600 bg-gray-50 p-2 lg:p-6 ">
+                  <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                    <div class="mb-4 w-full md:w-2/5">
+                      <div class="flex">
+                        <span class="mr-3">
+                          <img src="images/icon1.png" fill="currentColor" class="h-8 w-7">
+                       
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Charging time</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">4-6 Hours</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon2.png" fill="currentColor" class="w-7">
+                            
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Max speed</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">60 KM/H</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon4.png" fill="currentColor" class="w-7">
+                            
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Motor</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">1200 W </h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                      <div class="flex">
+                        <span class=":text-gray-400 mr-3 text-gray-500">
+                          <img src="images/icon34.png" fill="currentColor" class="w-7">
+                           
+                          </svg>
+                        </span>
+                        <div>
+                          <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Mileage</p>
+                          <h2 class=":text-gray-400 text-base font-semibold text-gray-700">90-30KM </h2> 
+                        </div>
+                        <a href="ZERO13X2.html">
+                          <button  href="singleproduct.html"  class="absolute mt-[6rem] left-[5rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+                          
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              </div>
+
+   
+  </div>
+</div>
+</div>
+
+  </div>
+
+  
+      </div>
+      
     </div>
     </div>
     
       </div>
 </div>
-  </div>
+  
 
   <style>
     .fade-in-element {
@@ -425,71 +1173,725 @@
 }
 
    </style>
-  
+  <style>    
+
+
+  </style>
 <div class="l3iba ">
 <div class="grid grid-cols-1">
   
+  
   <div class="fade-in-element mt-20 flex items-center justify-center">
+  
+   <div class="swiper">    
+    <div class="swiper-wrapper">
    
-    <img src="images/hak.png"  class="" alt="">
+      <div class="swiper-slide">
+   
+    <div class="flex justify-center items-center">
+    <img src="images/hak.png" class="" alt="">
+           
+  
+  
+  
   
     <div class="relative   lg:h-[540px]  lg:w-[24rem] rounded-xl  bg-white shadow-black shadow-2xl">
       <h2 class="z-20 float-right mr-5 mt-8 font-bold text-4xl font-[Rajdhani] block">2000Dhs</h2>
-      <h1 class="text-center mt-24 text-4xl  font-bold font-[Rajdhani] text-red-600">ZeroGT Pro</h1>
+      <h1 class="text-center mt-24 text-4xl  font-bold font-[Rajdhani] text-red-600">SH EXTREME 2</h1>
       <div class="relative grid grid-cols-1 mt-10">
 
-        <div class=" flex flex-wr mb-8 items-center">
-          <div class="w-32 text-l font-semibold text-center mr-4">Speed</div>
-          <div class="h-2 w-40 bg-red-500 rounded-l-md"></div>
-          <div class="h-5 w-3 bg-slate-400 rounded-sm shadow-2xl">
-            <div class="-mt-6 -ml-4">
-              <p class="font-semibold"> 50KM/H</p>
-                    </div>
-          </div>
-          </div>
-        
-        <div class="flex  mb-8 items-center">
-          <div class="w-32 text-l font-semibold text-center mr-4">Charging Time</div>
-          <div class="h-2 w-32 bg-red-500 rounded-l-md"></div>
-          <div class="h-5 w-3 bg-slate-400 rounded-sm shadow-2xl">
-            <div class=" -mt-6 w-20  -ml-4">
-              <p class=" font-semibold">4-5 Hours</p>
-                    </div>
-          </div>
-          </div>
-        
-          <div class="flex  mb-8 items-center">
-            <div class="w-32 text-l font-semibold text-center mr-4">Motor</div>
-            <div class="h-2 w-36 bg-red-500 rounded-l-md"></div>
-            <div class="h-5 w-3 bg-slate-400 rounded-sm shadow-2xl">
-              <div class=" -mt-6 w-20  -ml-4">
-                <p class=" font-semibold">1200 W</p>
-                      </div>
-            </div>
-            </div>
-        
-            <div class="flex  mb-14 items-center">
-              <div class="w-32 text-l font-semibold text-center mr-4">Mileage</div>
-              <div class="h-2 w-40 bg-red-500 rounded-l-md"></div>
-              <div class="h-5 w-3 bg-slate-400 rounded-sm shadow-2xl">
-                <div class=" -mt-6 w-40  -ml-4">
-                  <p class=" font-semibold"> 50-70 Km/h</p>
+<div class=""> 
+                    <div class="p-3 lg:p-5">
+                      <div class=":bg-gray-800 shadow-lg shadow-gray-300 rounded-xl border-2 border-red-600 bg-gray-50 p-2 lg:p-6 ">
+                        <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                          <div class="mb-4 w-full md:w-2/5">
+                            <div class="flex">
+                              <span class="mr-3">
+                                <img src="images/icon1.png" fill="currentColor" class="h-8 w-7">
+                             
+                                </svg>
+                              </span>
+                              <div>
+                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Charging time</p>
+                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">4-6 Hours</h2>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-4 w-full md:w-2/5">
+                            <div class="flex">
+                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                <img src="images/icon2.png" fill="currentColor" class="w-7">
+                                  
+                                </svg>
+                              </span>
+                              <div>
+                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Max speed</p>
+                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">70 KM/H</h2>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                            <div class="flex">
+                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                <img src="images/icon4.png" fill="currentColor" class="w-7">
+                                  
+                                </svg>
+                              </span>
+                              <div>
+                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Motor</p>
+                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">1200 W</h2>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                            <div class="flex">
+                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                <img src="images/icon34.png" fill="currentColor" class="w-7">
+                                 
+                                </svg>
+                              </span>
+                              <div>
+                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Mileage</p>
+                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">90-30km</h2> 
+                              </div>
+                              <a href="Sh-extreme2.html">
+    
+                                <button  href="Sh-extreme2.html"  class="absolute mt-32 left-[9rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+                            </div>
+                          </div>
                         </div>
-              </div>
-              </div>
-            
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                  
+                  </div>
+                  </div>
+                  <div class="swiper-slide">
+                    
+                    <div class="flex justify-center items-center">
+                    <img src="images/xfbfb (3).png" class="" alt="">
+                           
+                  
+                  
+                  
+                  
+                    <div class="relative   lg:h-[540px]  lg:w-[24rem] rounded-xl  bg-white shadow-black shadow-2xl">
+                      <h2 class="z-20 float-right mr-5 mt-8 font-bold text-4xl font-[Rajdhani] block">2000Dhs</h2>
+                      <h1 class="text-center mt-24 text-4xl  font-bold font-[Rajdhani] text-red-600">ZeroGT Pro</h1>
+                      <div class="relative grid grid-cols-1 mt-10">
+                
+                <div class=""> 
+                                    <div class="p-3 lg:p-5">
+                                      <div class=":bg-gray-800 shadow-lg shadow-gray-300 rounded-xl border-2 border-red-600 bg-gray-50 p-2 lg:p-6 ">
+                                        <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                                          <div class="mb-4 w-full md:w-2/5">
+                                            <div class="flex">
+                                              <span class="mr-3">
+                                                <img src="images/icon1.png" fill="currentColor" class="h-8 w-7">
+                                             
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Charging time</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">4-6Hours</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon2.png" fill="currentColor" class="w-7">
+                                                  
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Max speed</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">50 KM/H</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon4.png" fill="currentColor" class="w-7">
+                                                  
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Motor</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">1200 W</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon34.png" fill="currentColor" class="w-7">
+                                                 
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Mileage</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">70-30km</h2> 
+                                              </div>
+                                              <a href="Zerogtpro.html">
+    
+                                                <button   class="absolute mt-32 left-[9rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+                                                
+                                            </div>
+                                          </div>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  
+                                  </div>
+                  <div class="swiper-slide">
+                    
+                    <div class="flex justify-center items-center">
+                    <img src="images/Zero13xred.png" class="" alt="">
+                           
+                  
+                  
+                  
+                  
+                    <div class="relative   lg:h-[540px]  lg:w-[24rem] rounded-xl  bg-white shadow-black shadow-2xl">
+                      <h2 class="z-20 float-right mr-5 mt-8 font-bold text-4xl font-[Rajdhani] block">2000Dhs</h2>
+                      <h1 class="text-center mt-24 text-4xl  font-bold font-[Rajdhani] text-red-600">ZERO 13X</h1>
+                      <div class="relative grid grid-cols-1 mt-10">
+                
+                <div class=""> 
+                                    <div class="p-3 lg:p-5">
+                                      <div class=":bg-gray-800 shadow-lg shadow-gray-300 rounded-xl border-2 border-red-600 bg-gray-50 p-2 lg:p-6 ">
+                                        <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                                          <div class="mb-4 w-full md:w-2/5">
+                                            <div class="flex">
+                                              <span class="mr-3">
+                                                <img src="images/icon1.png" fill="currentColor" class="h-8 w-7">
+                                             
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Charging time</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">4-6 Hours</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon2.png" fill="currentColor" class="w-7">
+                                                  
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Max speed</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">60 KM/H</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon4.png" fill="currentColor" class="w-7">
+                                                  
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Motor</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">1200 W</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon34.png" fill="currentColor" class="w-7">
+                                                 
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Mileage</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">90-30KM</h2> 
+                                              </div>
+                                              <a href="Zero13x.html">
+    
+                                                <button  href="singleproduct.html"  class="absolute mt-32 left-[9rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+                                                
+                                            </div>
+                                          </div>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  
+                                  </div>
+                  <div class="swiper-slide">
+                    
+                    <div class="flex justify-center items-center">
+                    <img src="images/slider_WithSeat.png" class="" alt="">
+                           
+                  
+                  
+                  
+                  
+                    <div class="relative   lg:h-[540px]  lg:w-[24rem] rounded-xl  bg-white shadow-black shadow-2xl">
+                      <h2 class="z-20 float-right mr-5 mt-8 font-bold text-4xl font-[Rajdhani] block">2000Dhs</h2>
+                      <h1 class="text-center mt-24 text-4xl  font-bold font-[Rajdhani] text-red-600">ZERO 13X</h1>
+                      <div class="relative grid grid-cols-1 mt-10">
+                
+                <div class=""> 
+                                    <div class="p-3 lg:p-5">
+                                      <div class=":bg-gray-800 shadow-lg shadow-gray-300 rounded-xl border-2 border-red-600 bg-gray-50 p-2 lg:p-6 ">
+                                        <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                                          <div class="mb-4 w-full md:w-2/5">
+                                            <div class="flex">
+                                              <span class="mr-3">
+                                                <img src="images/icon1.png" fill="currentColor" class="h-8 w-7">
+                                             
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Charging time</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">4-6 Hours</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon2.png" fill="currentColor" class="w-7">
+                                                  
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Max speed</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">40 KM/H</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon4.png" fill="currentColor" class="w-7">
+                                                  
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Motor</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">800 W </h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon34.png" fill="currentColor" class="w-7">
+                                                 
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Mileage</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">60-30KM </h2> 
+                                              </div>
+                                              <a href="Zero13x.html">
+    
+                                                <button  href="singleproduct.html"  class="absolute mt-32 left-[9rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+                                                
+                                            </div>
+                                          </div>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  
+                                  </div>
+                  <div class="swiper-slide">
+                    
+                    <div class="flex justify-center items-center">
+                    <img src="images/SHTrotislider.png" class="" alt="">
+                           
+                  
+                  
+                  
+                  
+                    <div class="relative   lg:h-[540px]  lg:w-[24rem] rounded-xl  bg-white shadow-black shadow-2xl">
+                      <h2 class="z-20 float-right mr-5 mt-8 font-bold text-4xl font-[Rajdhani] block">2000Dhs</h2>
+                      <h1 class="text-center mt-24 text-4xl  font-bold font-[Rajdhani] text-red-600">SH Troti</h1>
+                      <div class="relative grid grid-cols-1 mt-10">
+                
+                <div class=""> 
+                                    <div class="p-3 lg:p-5">
+                                      <div class=":bg-gray-800 shadow-lg shadow-gray-300 rounded-xl border-2 border-red-600 bg-gray-50 p-2 lg:p-6 ">
+                                        <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                                          <div class="mb-4 w-full md:w-2/5">
+                                            <div class="flex">
+                                              <span class="mr-3">
+                                                <img src="images/icon1.png" fill="currentColor" class="h-8 w-7">
+                                             
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Charging time</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">4-6 Hours</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon2.png" fill="currentColor" class="w-7">
+                                                  
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Max speed</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">30 KM/H</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon4.png" fill="currentColor" class="w-7">
+                                                  
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Motor</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">350 W </h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon34.png" fill="currentColor" class="w-7">
+                                                 
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Mileage</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">15-30KM </h2> 
+                                              </div>
+                                              <a href="ShTroti.html">
+    
+                                                <button  href="singleproduct.html"  class="absolute mt-32 left-[9rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+                                                
+                                            </div>
+                                          </div>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  
+                                  </div>
+                  <div class="swiper-slide">
+                    
+                    <div class="flex justify-center items-center">
+                    <img src="images/sliderS9plus.png" class="" alt="">
+                           
+                  
+                  
+                  
+                  
+                    <div class="relative   lg:h-[540px]  lg:w-[24rem] rounded-xl  bg-white shadow-black shadow-2xl">
+                      <h2 class="z-20 float-right mr-5 mt-8 font-bold text-4xl font-[Rajdhani] block">2000Dhs</h2>
+                      <h1 class="text-center mt-24 text-4xl  font-bold font-[Rajdhani] text-red-600">S9 PLUS</h1>
+                      <div class="relative grid grid-cols-1 mt-10">
+                
+                <div class=""> 
+                                    <div class="p-3 lg:p-5">
+                                      <div class=":bg-gray-800 shadow-lg shadow-gray-300 rounded-xl border-2 border-red-600 bg-gray-50 p-2 lg:p-6 ">
+                                        <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                                          <div class="mb-4 w-full md:w-2/5">
+                                            <div class="flex">
+                                              <span class="mr-3">
+                                                <img src="images/icon1.png" fill="currentColor" class="h-8 w-7">
+                                             
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Charging time</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">4-6 Hours</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon2.png" fill="currentColor" class="w-7">
+                                                  
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Max speed</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">40 KM/H</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon4.png" fill="currentColor" class="w-7">
+                                                  
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Motor</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">800 W </h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon34.png" fill="currentColor" class="w-7">
+                                                 
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Mileage</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">60-30KM </h2> 
+                                              </div>
+                                              <a href="S9PLUS.html">
+    
+                                                <button  href="singleproduct.html"  class="absolute mt-32 left-[9rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+                                                
+                                            </div>
+                                          </div>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  
+                                  </div>
+                  <div class="swiper-slide">
+                    
+                    <div class="flex justify-center items-center">
+                    <img src="images/Nitroslider.png" class="" alt="">
+                           
+                  
+                  
+                  
+                  
+                    <div class="relative   lg:h-[540px]  lg:w-[24rem] rounded-xl  bg-white shadow-black shadow-2xl">
+                      <h2 class="z-20 float-right mr-5 mt-8 font-bold text-4xl font-[Rajdhani] block">2000Dhs</h2>
+                      <h1 class="text-center mt-24 text-4xl  font-bold font-[Rajdhani] text-red-600">SH Nitro</h1>
+                      <div class="relative grid grid-cols-1 mt-10">
+                
+                <div class=""> 
+                                    <div class="p-3 lg:p-5">
+                                      <div class=":bg-gray-800 shadow-lg shadow-gray-300 rounded-xl border-2 border-red-600 bg-gray-50 p-2 lg:p-6 ">
+                                        <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                                          <div class="mb-4 w-full md:w-2/5">
+                                            <div class="flex">
+                                              <span class="mr-3">
+                                                <img src="images/icon1.png" fill="currentColor" class="h-8 w-7">
+                                             
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Charging time</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">4-6 Hours</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon2.png" fill="currentColor" class="w-7">
+                                                  
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Max speed</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">60 KM/H</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon4.png" fill="currentColor" class="w-7">
+                                                  
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Motor</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">800 W </h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon34.png" fill="currentColor" class="w-7">
+                                                 
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Mileage</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">90-30KM </h2> 
+                                              </div>
+                                              <a href="SHnitro.html">
+    
+                                                <button  href="singleproduct.html"  class="absolute mt-32 left-[9rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+                                                
+                                            </div>
+                                          </div>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  
+                                  </div>
+                  <div class="swiper-slide">
+                    
+                    <div class="flex justify-center items-center">
+                    <img src="images/X2slider.png" class="" alt="">
+                           
+                  
+                  
+                  
+                  
+                    <div class="relative   lg:h-[540px]  lg:w-[24rem] rounded-xl  bg-white shadow-black shadow-2xl">
+                      <h2 class="z-20 float-right mr-5 mt-8 font-bold text-4xl font-[Rajdhani] block">2000Dhs</h2>
+                      <h1 class="text-center mt-24 text-4xl  font-bold font-[Rajdhani] text-red-600">Zero 13 X2</h1>
+                      <div class="relative grid grid-cols-1 mt-10">
+                
+                <div class=""> 
+                                    <div class="p-3 lg:p-5">
+                                      <div class=":bg-gray-800 shadow-lg shadow-gray-300 rounded-xl border-2 border-red-600 bg-gray-50 p-2 lg:p-6 ">
+                                        <div class="flex flex-wrap justify-center gap-x-10 gap-y-4">
+                                          <div class="mb-4 w-full md:w-2/5">
+                                            <div class="flex">
+                                              <span class="mr-3">
+                                                <img src="images/icon1.png" fill="currentColor" class="h-8 w-7">
+                                             
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Charging time</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">4-6 Hours</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon2.png" fill="currentColor" class="w-7">
+                                                  
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Max speed</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">60 KM/H</h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon4.png" fill="currentColor" class="w-7">
+                                                  
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Motor</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">1200 W </h2>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="mb-4 w-full md:w-2/5 lg:mb-0">
+                                            <div class="flex">
+                                              <span class=":text-gray-400 mr-3 text-gray-500">
+                                                <img src="images/icon34.png" fill="currentColor" class="w-7">
+                                                 
+                                                </svg>
+                                              </span>
+                                              <div>
+                                                <p class=":text-gray-400 mb-2 text-sm font-medium text-gray-500">Mileage</p>
+                                                <h2 class=":text-gray-400 text-base font-semibold text-gray-700">90-30KM </h2> 
+                                              </div>
+                                              <a href="ZERO13X2.html">
+    
+                                                <button  href="singleproduct.html"  class="absolute mt-32 left-[9rem] rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+                                                
+                                            </div>
+                                          </div>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  
+                                  </div>
+                                  
+                                  
+                  </div>
+                  </div>
+               
+                    <div class="swiper-button-prev "></div>              
+                    <div class="swiper-button-next relative"></div>  
+         
+        
+<style>
+ .swiper-button-prev{
+  top: 230px;
+  margin-left: 175px ;
+  color:red;
+  
+ }
+ .swiper-button-next{
+  top: 230px;
+  margin-right:  49px ;
+  color:red;
+ }
+
+  .swiper {
+    margin-top: 100px;
+  width: 100%;
+  height: 150%;
+}
+</style>
         
         </div>
-        <a href="singleproduct.html">
-    
-      <button  href="singleproduct.html"  class=" ml-32  rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
+        
     </div>
   </div>
-  <style>
-  
-  </style>
+ 
 
-  <div class="dakchi fade-in-element mt-20 ml-[-0.5rem] flex items-center  justify-center">
+  <!-- <div class="dakchi fade-in-element mt-20 ml-[-0.5rem] flex items-center  justify-center">
    
     <img src="images/xfbfb (3).png"  class="" alt="">
   
@@ -546,7 +1948,7 @@
         <a href="singleproduct.html"> 
       <button   class="  ml-32  rounded-md shadow-sm shadow-red-400 bg-red-600 border-2 border-red-600 px-5 py-2.5 text-center text-sm font-medium text-white  hover:bg-white focus:outline-none hover:text-red-600 0">More Details</button></a>
     </div>
-  </div>
+  </div> -->
 </div>
 </div> 
 <!-- <div class="fixed bottom-5 right-5 flex items-center">
@@ -636,11 +2038,34 @@
   <!-- <p class="mt-5">This dropdown navbar element is part of a larger, open-source library of Tailwind CSS components. Learn more by going to the official <a class="text-blue-600 hover:underline" href="#" target="_blank">Flowbite Documentation</a>.</p>
 </div> -->
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
 
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
  
   </body>
 </div>
-<script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+
 
 <script>
   window.addEventListener('load', function () {
@@ -650,4 +2075,81 @@
     document.querySelector('.content').style.display = 'block';
   });
 </script>
-<script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const cardContainer = document.getElementById('cardContainer');
+  let isInputFocused = false;
+
+  const data = [
+    // This is an example data array. Replace it with your actual data.
+    { title: 'SH EXTREME 2',content:'',imageSrc:'images/Trot44-1.png', link: 'Sh-extreme2.html' },
+    { title: 'Zero GT PRO',content:'',imageSrc:'images/SingleTrot.png', link: 'Zerogtpro.html' },
+    { title: 'Zero 13X',content:'',imageSrc:'images/slider teleZero113X.png', link: 'Zero13x.html' },
+    { title: 'SH EXTREME 2 WITH SEAT',content:'',imageSrc:'images/withseatslider tele.png', link: 'SH EXTREME 2 WITH SEAT.html' },
+    { title: 'SH Troti',content:'',imageSrc:'images/slider teleSHTroti.png', link: 'ShTroti.html' },
+    { title: 'S9 Plus',content:'',imageSrc:'images/S9slider tele.png', link: 'S9PLUS.html' },
+    { title: 'SH Nitro',content:'',imageSrc:'images/Nitroslider tele.png', link: 'SHnitro.html' },
+    { title: 'Zero 13 X2',content:'',imageSrc:'images/X2slider tele.png', link: 'ZERO13X2.html' },
+    
+    // Add more data items as needed
+  ];
+
+  searchInput.addEventListener('focus', () => {
+    isInputFocused = true;
+    cardContainer.classList.remove('hidden');
+  });
+
+  searchInput.addEventListener('blur', () => {
+    isInputFocused = false;
+    // Delay hiding the card container to allow click on the container before it disappears
+    setTimeout(() => {
+      if (!isInputFocused) {
+        cardContainer.classList.add('hidden');
+      }
+    }, 100);
+  });
+
+  searchInput.addEventListener('input', event => {
+    const searchTerm = event.target.value.trim(); // Remove leading/trailing whitespace
+    if (searchTerm.length > 0) {
+      cardContainer.classList.remove('hidden');
+      updateCards(searchTerm);
+    } else {
+      cardContainer.classList.add('hidden');
+      clearCards();
+    }
+  });
+
+  function updateCards(searchTerm) {
+    clearCards();
+
+    const filteredData = data.filter(item => item.title.toLowerCase().includes(searchTerm.toLowerCase()));
+
+    filteredData.forEach(item => {
+const card = document.createElement('a'); // Use <a> element for the card
+card.href = item.link; // Set the link URL
+card.classList.add('border', 'p-4', 'm-2', 'bg-white', 'flex', 'items-center', 'relative'); // Add relative positioning
+card.style.textDecoration = 'none'; // Remove underlines from the link
+card.innerHTML = `
+  <h2 class="text-lg font-semibold">${item.title}</h2>
+  <p class="text-gray-600">${item.content}</p>
+  <div class="flex-grow"></div> <!-- Create a flexible space -->
+  <img src="${item.imageSrc}" alt="${item.title}" class="w-12 ml-10"> <!-- Small image -->
+`;
+cardContainer.appendChild(card);
+});
+
+
+
+
+
+  }
+
+  function clearCards() {
+    cardContainer.innerHTML = '';
+  }
+</script>
+
+</html>

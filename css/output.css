@@ -1178,6 +1178,22 @@ video {
   width: max-content;
 }
 
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[px\] {
+  width: px;
+}
+
+.w-\[450px\] {
+  width: 450px;
+}
+
 .min-w-\[160px\] {
   min-width: 160px;
 }
@@ -1330,6 +1346,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
